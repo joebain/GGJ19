@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{74D028EF-A701-4EAC-AD81-C4FCDA4BFC20}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{74D028EF-A701-4EAC-AD81-C4FCDA4BFC20}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music_01" ID="{13710510-A68B-4BB2-98FB-A16E9975E443}">
+					<ChildrenList>
+						<Action Name="" ID="{FCF7241E-496B-4BED-AFEC-3EB5C29AC2C7}" ShortID="841001871">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Release" ID="{C784EE86-2FD4-46CE-82BF-1F210109BA71}" WorkUnitID="{B884618A-17F7-487B-9BE6-ECAA64D0951A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{50A9D713-463C-4C2D-BF97-1665AB9F4ED3}" ShortID="247665330">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Quicklier" ID="{43511ECA-E874-4EB0-86D3-BBF9EEC13B85}" WorkUnitID="{B884618A-17F7-487B-9BE6-ECAA64D0951A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_02" ID="{A4F24188-CD50-4A06-96CB-2E38A8C070A5}">
+					<ChildrenList>
+						<Action Name="" ID="{EB47ABC4-99E0-462A-A647-C110F34437EE}" ShortID="253227752">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Quicklier" ID="{43511ECA-E874-4EB0-86D3-BBF9EEC13B85}" WorkUnitID="{B884618A-17F7-487B-9BE6-ECAA64D0951A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8459AB43-ABB1-48F8-BBFA-2FE4E89F709D}" ShortID="767927838">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Release" ID="{C784EE86-2FD4-46CE-82BF-1F210109BA71}" WorkUnitID="{B884618A-17F7-487B-9BE6-ECAA64D0951A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_01" ID="{15D3B00F-AF76-4C03-8EB5-6C632D441F4A}">
+					<ChildrenList>
+						<Action Name="" ID="{D6C28E3F-00DD-458D-9597-C4FF76538328}" ShortID="702997633">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AttackCharge" ID="{F823F85A-D84B-4881-9FAB-643B4EB381D6}" WorkUnitID="{267AFA2F-E9ED-47CA-922F-F7550699E8F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_02" ID="{671E8038-0751-43B5-B346-CCFAE882738E}">
+					<ChildrenList>
+						<Action Name="" ID="{E8648B53-A58A-4FE6-8D22-000561FBF1F5}" ShortID="454464370">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Block" ID="{714F157F-06F3-496C-9135-82F29ACA7DC9}" WorkUnitID="{267AFA2F-E9ED-47CA-922F-F7550699E8F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_03" ID="{3E8D3E6C-9F76-4745-BE63-E15C9AB82655}">
+					<ChildrenList>
+						<Action Name="" ID="{36C489DC-71CD-41AA-A474-F8DE27F69123}" ShortID="403607508">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BumperSelect" ID="{D787F9DD-E1EF-4A30-9F77-91ECDC269745}" WorkUnitID="{267AFA2F-E9ED-47CA-922F-F7550699E8F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_04" ID="{6DA21B1E-FAD1-4C59-BD00-A54EB977EA7F}">
+					<ChildrenList>
+						<Action Name="" ID="{6359676E-3B31-451B-B922-FD9A6FB93316}" ShortID="810119138">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ChargeOrbCollect" ID="{2C3599D2-AA72-4BF3-9791-FDF3A0F371FF}" WorkUnitID="{267AFA2F-E9ED-47CA-922F-F7550699E8F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_05" ID="{6FCD71A9-2160-49D5-ACFC-9B07A57DE6B1}">
+					<ChildrenList>
+						<Action Name="" ID="{3C886064-93B7-47F6-868E-08CE12A05C73}" ShortID="457562265">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ChargeOrbSpawn" ID="{D537EE03-6DFF-4B05-8FA9-D66AC9660119}" WorkUnitID="{267AFA2F-E9ED-47CA-922F-F7550699E8F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_Music" ID="{180F14AD-8D83-4CA1-92C2-E6C5B912B9EF}">
+					<ChildrenList>
+						<Action Name="" ID="{AEBDCF85-2122-4189-9138-9D2A3409F035}" ShortID="513215709">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{79830DE1-BEE5-4B39-BDD0-1E37A4601E4D}" WorkUnitID="{BE80424A-029B-485C-B498-FCD580E3366B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UnPause_Music" ID="{C91F9141-2187-4D8F-86DC-273517130316}">
+					<ChildrenList>
+						<Action Name="" ID="{DE82A11C-ED6D-4849-B50B-E2C1C200D48C}" ShortID="28134105">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{79830DE1-BEE5-4B39-BDD0-1E37A4601E4D}" WorkUnitID="{BE80424A-029B-485C-B498-FCD580E3366B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
