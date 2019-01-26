@@ -53,4 +53,38 @@ public class Game : MonoBehaviour
         return saveListData;
     }
 
+    public void LoadAndSavePlayerData()
+    {
+        string path = Application.dataPath + "/SaveData/save.json";
+
+        if (File.Exists(path))
+        {
+            string dataAsJson = File.ReadAllText(path);
+
+            //Load as Array THEN
+            Player[] _tempLoadListData = JsonHelper.FromJson<Player>(dataAsJson);
+            //Convert to a List
+            List<Player> loadListData = _tempLoadListData.OfType<Player>().ToList();
+            SavePlayerData(loadListData);
+        }
+        else
+        {
+            Debug.LogError("Cannot load game data!");
+        }
+    }
+
+    public void SavePlayerData(List<Player> saveListData)
+    {
+        //calling Singleton GAME payer object
+        saveListData.Add(Game.Instance.player);
+
+        //Must be saved as JSON list
+        string jsonToSave = JsonHelper.ToJson(saveListData.ToArray());
+        string path = Application.dataPath + "/SaveData/save.json";
+        //string dataAsJson = JsonUtility.ToJson(player);
+
+        //string filePath = Application.dataPath + path;
+        File.WriteAllText(path, jsonToSave);
+    }
+
 }
