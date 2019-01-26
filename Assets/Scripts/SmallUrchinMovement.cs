@@ -82,7 +82,7 @@ public class SmallUrchinMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         float current_point = body.GetRelativePoint(relative_point).y;
-        if (collision.collider.CompareTag("wall") && current_point > previous_point && current_point > start_point)
+        if (collision.collider.CompareTag("Walls") && current_point > previous_point && current_point > start_point)
         {
             previous_point = body.GetRelativePoint(body.position).y;
             print("Has collided with top");
@@ -90,7 +90,7 @@ public class SmallUrchinMovement : MonoBehaviour
             collided_top = true;
         }
         
-        if (collision.collider.CompareTag("wall") && current_point < start_point && current_point < previous_point)
+        if (collision.collider.CompareTag("Walls") && current_point < start_point && current_point < previous_point)
         {
             previous_point = body.GetRelativePoint(body.position).y;
             print("Has collided with bottom");
