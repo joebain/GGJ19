@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
@@ -25,6 +26,13 @@ public class MenuButton : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("Go to Controls has started");
+    }
+
+    public void ViewHighScores()
+    {
+        Debug.Log("Loading HighScores");
+        SceneManager.LoadScene("HighScores");
+
     }
 
 }
