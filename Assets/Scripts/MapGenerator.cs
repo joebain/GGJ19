@@ -75,6 +75,31 @@ public class MapGenerator : MonoBehaviour
         GenerateTiles();
     }
 
+    private void GenerateSections(int seed)
+    {
+        var rng = new System.Random(seed);
+        pipeSections = new List<PipeSectionTypes>(SectionCount);
+        PipeSectionTypes currentSection = PipeSectionTypes.Medium, nextSection;
+        for (int s = 0; s < SectionCount; s++)
+        {
+            Rule rule = ruleDictionary[currentSection];
+            nextSection = rule.To[rng.Next(rule.To.Length)];
+            pipeSections.Add(nextSection);
+            if (s > 0 && pipeSections[s - 1] != pipeSections[s] && pipeSections[s - 1] != PipeSectionTypes.Transition)
+            {
+                if (s >= SectionCount - 1)
+                {
+                    pipeSections[s] = pipeSections[s - 1];
+                    break;
+                }
+                pipeSections.Add(pipeSections[s]);
+                pipeSections[s] = PipeSectionTypes.Transition;
+                s++;
+            }
+            currentSection = nextSection;
+        }
+    }
+
     private void GenerateTiles()
     {
         Vector3Int centre = new Vector3Int(0, 0, 0);
@@ -93,31 +118,14 @@ public class MapGenerator : MonoBehaviour
                 tilemap.SetTile(centre + Vector3Int.up * width, TopPipeWall);
                 tilemap.SetTile(centre + Vector3Int.down * width, BottomPipeWall);
                 centre.x++;
-            }
-        }
-    }
-
-    private void GenerateSections(int seed)
-    {
-        var rng = new System.Random(seed);
-        pipeSections = new List<PipeSectionTypes>(SectionCount);
-        int sectionMax = ((int)PipeSectionTypes.Transition) - 1;
-        PipeSectionTypes currentSection = PipeSectionTypes.Medium, nextSection;
-        for (int s = 0; s < SectionCount; s++)
-        {
-            Rule rule = ruleDictionary[currentSection];
-            nextSection = rule.To[rng.Next(rule.To.Length)];
-            pipeSections.Add(nextSection);
-            if (s > 0 && pipeSections[s - 1] != pipeSections[s] && pipeSections[s - 1] != PipeSectionTypes.Transition)
-            {
-                if (s >= SectionCount - 1)
+                if (section == PipeSectionTypes.MediumGoingUp || section == PipeSectionTypes.SmallGoingUp)
                 {
-                    pipeSections[s] = pipeSections[s - 1];
-                    break;
+                    centre.y++;
                 }
-                pipeSections.Add(pipeSections[s]);
-                pipeSections[s] = PipeSectionTypes.Transition;
-                s++;
+                else if (section == PipeSectionTypes.MediumGoingDown || section == PipeSectionTypes.SmallGoingDown)
+                {
+                    centre.y--;
+                }
             }
         }
     }
@@ -140,6 +148,7 @@ public class MapGenerator : MonoBehaviour
             case PipeSectionTypes.Medium:
             case PipeSectionTypes.MediumGoingDown:
             case PipeSectionTypes.MediumGoingUp:
+            case PipeSectionTypes.Split:
                 return 16;
             case PipeSectionTypes.Big:
                 return 24;
