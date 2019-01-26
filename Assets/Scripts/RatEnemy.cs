@@ -11,6 +11,8 @@ public class RatEnemy : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.SetBool("IsAttacking", false);
+
     }
 
     private void FixedUpdate()
@@ -19,27 +21,28 @@ public class RatEnemy : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetBool("IsAttacking", true);
-        Debug.Log("Attaccking mode actiavted");
+        Debug.Log("TESTING tirggers mode actiavted");
+    }
 
-        if (other.gameObject.tag == "Player")
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Player")
         {
             Debug.Log("PLAYER ATTACK");
+            anim.SetBool("IsAttacking", true);
+        }
+        else
+        {
+            anim.SetBool("IsAttacking", false);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         anim.SetBool("IsAttacking", false);
         Debug.Log("Deactivate mode actiavted");
-
     }
 }

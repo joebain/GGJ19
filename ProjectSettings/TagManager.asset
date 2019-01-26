@@ -4,11 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - wall
-=======
+  - Walls
   - Deadly
->>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
   layers:
   - Default
   - TransparentFX
