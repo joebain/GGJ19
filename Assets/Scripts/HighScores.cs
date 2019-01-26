@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using System.Linq;
 
 public class HighScores : MonoBehaviour
 {
-
     private string gameDataFileName = "save.json";
     private Player player;
 
     private void Awake()
     {
+        //testings purposes
         player = new Player("Isfand", 3242);
+       
     }
 
 
@@ -32,14 +34,17 @@ public class HighScores : MonoBehaviour
 
         if (File.Exists(path))
         {
-            // Read the json from the file into a string
             string dataAsJson = File.ReadAllText(path);
-            // Pass the json to JsonUtility, and tell it to create a GameData object from it
-            Player playerLoaded = JsonUtility.FromJson<Player>(dataAsJson);
-            // Retrieve spefic loadedData
-            Debug.Log("LOADED: " + playerLoaded.Name + " score " + playerLoaded.Score);
 
-            //allRoundData = loadedData.allRoundData;
+            //Load as Array THEN
+            Player[] _tempLoadListData = JsonHelper.FromJson<Player>(dataAsJson);
+            //Convert to a List
+            List<Player> loadListData = _tempLoadListData.OfType<Player>().ToList();
+            for (int i = 0; i < loadListData.Count; i++)
+            {
+                Debug.Log("Name: " + loadListData[i].Name);
+                Debug.Log("Scores: " + loadListData[i].Score);
+            }
         }
         else
         {
@@ -49,14 +54,30 @@ public class HighScores : MonoBehaviour
 
     public void SavePlayerData()
     {
+        //Save as a list
 
-        Debug.Log("TEST: " + player.Name + " score " + player.Score);
+        List<Player> saveListData = new List<Player>();
+        Player saveData = new Player("Jane", 123);
 
+        //calling Singleton GAME payer object
+        Player playerFromSingleton = Game.Instance.ReturnPlayerObj();
+
+        saveListData.Add(player);
+        saveListData.Add(saveData);
+        saveListData.Add(playerFromSingleton);
+
+
+        Debug.Log("TEST (1): " + player.Name + " score " + player.Score);
+        Debug.Log("TEST (2): " + saveData.Name + " score " + saveData.Score);
+        Debug.Log("TEST (3): " + playerFromSingleton.Name + " score " + playerFromSingleton.Score);
+
+        //Must be saved as JSON list
+        string jsonToSave = JsonHelper.ToJson(saveListData.ToArray());
         string path = Application.dataPath + "/SaveData/save.json";
-        string dataAsJson = JsonUtility.ToJson(player);
+        //string dataAsJson = JsonUtility.ToJson(player);
 
         //string filePath = Application.dataPath + path;
-        File.WriteAllText(path, dataAsJson);
+        File.WriteAllText(path, jsonToSave);
     }
 
 
