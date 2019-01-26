@@ -85,6 +85,7 @@ public class HighScores : MonoBehaviour
 
         //string filePath = Application.dataPath + path;
         File.WriteAllText(path, jsonToSave);
+
     }
 
 
