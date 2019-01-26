@@ -83,7 +83,7 @@ public class MapGenerator : MonoBehaviour
             foreach (Transform child in pipeSection.transform) {
                 Transform thing = Instantiate(child);
                 thing.parent = tilemap.transform;
-                thing.position = thing.localPosition + cursor;
+                thing.position = thing.localPosition + cursor + Vector3Int.right*6;  // i don't know why
             }
 
             cursor += Vector3Int.right * pipeSection.SectionSize.size.x + Vector3Int.up * pipeSection.VerticalOffset;
