@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuButton : MonoBehaviour
+public class Controls : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class MenuButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Spacebar Pressed in Start scence");
+            Debug.Log("Spacebar Pressed in Controls Scence");
             StartGame();
 
         }
@@ -24,7 +24,6 @@ public class MenuButton : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Go to Controls has started");
+        Debug.Log("Game has started");
     }
-
 }
