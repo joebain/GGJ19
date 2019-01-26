@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Linq;
 
 public class Game : MonoBehaviour
 {
     public static Game Instance = null;
     private Player player;
+
+    private void Awake()
+    {
+        LoadTestData();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +28,17 @@ public class Game : MonoBehaviour
             Destroy(gameObject);
         }
 
-        CreatePlayer();
-    }
-
-    public void CreatePlayer()
-    {
-        //creating player for testting purposes
-        player = new Player("Isfandyar", 2343);
     }
 
     public Player ReturnPlayerObj()
     {
         return player;
     }
+
+    public void LoadTestData()
+    {
+        Player saveData = new Player("Jane", 123);
+        player = new Player("Isfandyar", 2343);
+    }
+
 }
