@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class MapGenerator : MonoBehaviour
 {
-    public Tilemap tilemap;
+    public Tilemap[] tilemaps;
     public int SectionCount = 100;
 
     //public PipeSection[] SectionPrefabs;
@@ -22,6 +22,8 @@ public class MapGenerator : MonoBehaviour
     [InspectorButton("DoGenerateMap")]
     public bool _doGenerateMap;
 
+    public string PipeSectionsFolder = "PipeSections";
+
     public void DoGenerateMap()
     {
         GenerateMap(new System.Random().Next());
@@ -32,10 +34,14 @@ public class MapGenerator : MonoBehaviour
     {
         PreprocessSections();
 
-        tilemap.ClearAllTiles();
-        for (int c = tilemap.transform.childCount-1; c >= 0; c--)
+        for (int t = 0; t < tilemaps.Length; t++)
         {
-            DestroyImmediate(tilemap.transform.GetChild(c).gameObject);
+            tilemaps[t].ClearAllTiles();
+
+            for (int c = tilemaps[t].transform.childCount - 1; c >= 0; c--)
+            {
+                DestroyImmediate(tilemaps[t].transform.GetChild(c).gameObject);
+            }
         }
         GenerateSections(seed);
         GenerateTiles();
@@ -74,31 +80,40 @@ public class MapGenerator : MonoBehaviour
         for (int s = 0; s < pipeSections.Count - 1; s++)
         {
             PipeSection pipeSection = pipeSections[s];
-            TileBase[] tiles = pipeSection.Tilemap.GetTilesBlock(pipeSection.SectionSize);
+            for (int t = 0; t < pipeSection.Tilemaps.Length; t++)
+            {
+                TileBase[] tiles = pipeSection.Tilemaps[t].GetTilesBlock(pipeSection.SectionSize);
 
-            Vector3Int sectionOffset = new Vector3Int(0, -Mathf.FloorToInt(pipeSection.SectionSize.size.y*0.5f), 0);
-            BoundsInt writePos = new BoundsInt(cursor + sectionOffset, pipeSection.SectionSize.size);
-            tilemap.SetTilesBlock(writePos, tiles);
+                Vector3Int sectionOffset = new Vector3Int(0, -Mathf.FloorToInt(pipeSection.SectionSize.size.y * 0.5f), 0);
+                BoundsInt writePos = new BoundsInt(cursor + sectionOffset, pipeSection.SectionSize.size);
+                tilemaps[t].SetTilesBlock(writePos, tiles);
 
-            foreach (Transform child in pipeSection.transform) {
-                Transform thing = Instantiate(child);
-                thing.parent = tilemap.transform;
-                thing.position = thing.localPosition + cursor + Vector3Int.right*6;  // i don't know why
+                foreach (Transform child in pipeSection.Tilemaps[t].transform)
+                {
+                    Transform thing = Instantiate(child);
+                    thing.parent = tilemaps[t].transform;
+                    thing.position = thing.localPosition + cursor + Vector3Int.right * 6;  // i don't know why
+                }
             }
-
+            
             cursor += Vector3Int.right * pipeSection.SectionSize.size.x + Vector3Int.up * pipeSection.VerticalOffset;
         }
     }
 
     private void PreprocessSections()
     {
-        var SectionPrefabs = Resources.LoadAll<PipeSection>("PipeSections");
+        var SectionPrefabs = Resources.LoadAll<PipeSection>(PipeSectionsFolder);
 
         sectionDictionary = new Dictionary<PipeSection.JointType, List<PipeSection>>();
         sectionInstances = new List<PipeSection>();
         for (int p = 0; p < SectionPrefabs.Length; p++)
         {
             PipeSection section = Instantiate(SectionPrefabs[p]);
+            for (int t = 0; t < section.Tilemaps.Length; t++)
+            {
+                section.Tilemaps[t].CompressBounds();
+                section.Tilemaps[t].ResizeBounds();
+            }
             sectionInstances.Add(section);
             if (!sectionDictionary.ContainsKey(section.StartJoint))
             {
