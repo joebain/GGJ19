@@ -583,7 +583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172848162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bc893eaf9c743d5a755d4a18e8ebcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 00be9a7e273b8ff4da2c2ae1ff3197f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 1768706389}
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1172848167}
+      - m_Target: {fileID: 0}
         m_MethodName: save
         m_Mode: 1
         m_Arguments:
