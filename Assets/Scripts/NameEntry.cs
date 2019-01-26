@@ -25,7 +25,8 @@ public class NameEntry : MonoBehaviour
     {
         Debug.Log("TEST: " + input.text);
         Game.Instance.player.Name = input.text;
-        // save
+        Game.Instance.LoadAndSavePlayerData();
+        Game.Instance.player = new Player();
         SceneManager.LoadScene("HighScores");
     }
 
