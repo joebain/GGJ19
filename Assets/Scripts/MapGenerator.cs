@@ -12,6 +12,7 @@ public class MapGenerator : MonoBehaviour
 
     private List<PipeSection> pipeSections;
     private Dictionary<PipeSection.JointType, List<PipeSection>> sectionDictionary;
+    private List<PipeSection> sectionInstances;
 
     void Start()
     {
@@ -29,13 +30,23 @@ public class MapGenerator : MonoBehaviour
 
     public void GenerateMap(int seed)
     {
-        FillRuleDictionary();
+        PreprocessSections();
 
         tilemap.ClearAllTiles();
         GenerateSections(seed);
         GenerateTiles();
+
+        PostProcess();
     }
-    
+
+    private void PostProcess()
+    {
+        for (int s = 0; s < sectionInstances.Count; s++)
+        {
+            DestroyImmediate(sectionInstances[s].gameObject);
+        }
+    }
+
     private void GenerateSections(int seed)
     {
         var rng = new System.Random(seed);
@@ -45,7 +56,7 @@ public class MapGenerator : MonoBehaviour
         PipeSection prevSection = null, nextSection;
         for (int s = 0; s < SectionCount; s++)
         {
-            List<PipeSection> possibleSections = prevSection == null ? new List<PipeSection>(SectionPrefabs) : sectionDictionary[prevSection.EndJoint];
+            List<PipeSection> possibleSections = prevSection == null ? new List<PipeSection>(sectionInstances) : sectionDictionary[prevSection.EndJoint];
             nextSection = possibleSections[rng.Next(possibleSections.Count)];
             pipeSections.Add(nextSection);
             prevSection = nextSection;
@@ -61,18 +72,21 @@ public class MapGenerator : MonoBehaviour
             PipeSection pipeSection = pipeSections[s];
             TileBase[] tiles = pipeSection.Tilemap.GetTilesBlock(pipeSection.SectionSize);
 
-            BoundsInt writePos = new BoundsInt(cursor, pipeSection.SectionSize.size);
+            Vector3Int sectionOffset = new Vector3Int(0, -Mathf.FloorToInt(pipeSection.SectionSize.size.y*0.5f), 0);
+            BoundsInt writePos = new BoundsInt(cursor + sectionOffset, pipeSection.SectionSize.size);
             tilemap.SetTilesBlock(writePos, tiles);
             cursor += Vector3Int.right*pipeSection.SectionSize.size.x + Vector3Int.up * pipeSection.VerticalOffset;
         }
     }
 
-    private void FillRuleDictionary()
+    private void PreprocessSections()
     {
         sectionDictionary = new Dictionary<PipeSection.JointType, List<PipeSection>>();
+        sectionInstances = new List<PipeSection>();
         for (int p = 0; p < SectionPrefabs.Length; p++)
         {
-            PipeSection section = SectionPrefabs[p];
+            PipeSection section = Instantiate(SectionPrefabs[p]);
+            sectionInstances.Add(section);
             if (!sectionDictionary.ContainsKey(section.StartJoint))
             {
                 sectionDictionary[section.StartJoint] = new List<PipeSection>();
