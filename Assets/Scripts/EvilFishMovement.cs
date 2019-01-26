@@ -41,8 +41,8 @@ public class EvilFishMovement : MonoBehaviour
     {
         velocity = body.GetRelativePointVelocity(relative_point);
         mag = velocity.magnitude;
-        print(velocity);
-        print(mag);
+        //print(velocity);
+        //print(mag);
             if (mag > TOP_SPEED)
             {
                 body.velocity = velocity.normalized * TOP_SPEED;

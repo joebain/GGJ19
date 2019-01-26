@@ -60,10 +60,10 @@ public class HighScores : MonoBehaviour
         List<Player> saveListData = new List<Player>();
 
         //calling Singleton GAME payer object
-        Player playerFromSingleton = Game.Instance.ReturnPlayerObj();
-        saveListData.Add(playerFromSingleton);
+        //Player playerFromSingleton = Game.Instance.ReturnPlayerObj();
+        //saveListData.Add(playerFromSingleton);
        
-        Debug.Log("TEST (1): " + playerFromSingleton.Name + " score " + playerFromSingleton.Score);
+        //Debug.Log("TEST (1): " + playerFromSingleton.Name + " score " + playerFromSingleton.Score);
 
 
         //Must be saved as JSON list

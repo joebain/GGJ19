@@ -9,9 +9,14 @@ public class Game : MonoBehaviour
     public static Game Instance = null;
     public Player player;
 
+    private int prevSec;
+
+    public int ScorePerSec;
+
     private void Awake()
     {
         LoadTestData();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Start is called before the first frame update
@@ -28,6 +33,18 @@ public class Game : MonoBehaviour
             Destroy(gameObject);
         }
 
+        player = new Player();
+
+    }
+
+    void Update()
+    {
+        int thisSec = Mathf.FloorToInt(Time.time);
+        if (thisSec > prevSec)
+        {
+            prevSec = thisSec;
+            player.Score += ScorePerSec;
+        }
     }
 
     public Player ReturnPlayerObj()

@@ -484,7 +484,6 @@ GameObject:
   - component: {fileID: 1172848164}
   - component: {fileID: 1172848163}
   - component: {fileID: 1172848167}
-  - component: {fileID: 1172848168}
   m_Layer: 5
   m_Name: NameUI
   m_TagString: Untagged
@@ -584,19 +583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172848162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f84e5e89817d6494a9b5ddd1d31de717, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1172848168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172848162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bc893eaf9c743d5a755d4a18e8ebcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 067ef5d4ed5090b439566bc051ab19cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 1768706389}
@@ -758,7 +745,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1172848168}
+      - m_Target: {fileID: 1172848167}
         m_MethodName: save
         m_Mode: 1
         m_Arguments:
