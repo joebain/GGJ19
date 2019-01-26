@@ -35,10 +35,22 @@ public class Game : MonoBehaviour
         return player;
     }
 
-    public void LoadTestData()
+    public List<Player> LoadTestData()
     {
         Player saveData = new Player("Jane", 123);
+        Player saveData_2 = new Player("Maria", 1453);
+        Player saveData_3 = new Player("Jo", 524);
+
         player = new Player("Isfandyar", 2343);
+
+        List<Player> saveListData = new List<Player>();
+
+        saveListData.Add(saveData);
+        saveListData.Add(saveData_2);
+        saveListData.Add(saveData_3);
+        saveListData.Add(player);
+
+        return saveListData;
     }
 
 }

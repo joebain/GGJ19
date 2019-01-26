@@ -38,13 +38,23 @@ public class HighScores : MonoBehaviour
             Player[] _tempLoadListData = JsonHelper.FromJson<Player>(dataAsJson);
             //Convert to a List
             List<Player> loadListData = _tempLoadListData.OfType<Player>().ToList();
+            loadListData.Sort((e1, e2) => e2.Score.CompareTo(e1.Score));
 
             for (int i = 0; i < loadListData.Count; i++)
             {
-                Debug.Log("Name: " + loadListData[i].Name);
-                Debug.Log("Scores: " + loadListData[i].Score);
-                scoresTexts[i].text = loadListData[i].Score.ToString();
-                playerNamesTexts[i].text = loadListData[i].Name;
+                //only 3 scores allowed, anymore loop out of bounds
+                if (i > 2)
+                {
+                    break;
+                }
+                else
+                {
+
+                    Debug.Log("Name: " + loadListData[i].Name);
+                    Debug.Log("Scores: " + loadListData[i].Score);
+                    scoresTexts[i].text = loadListData[i].Score.ToString();
+                    playerNamesTexts[i].text = loadListData[i].Name;
+                }
             }
         }
         else
@@ -53,18 +63,20 @@ public class HighScores : MonoBehaviour
         }
     }
 
+
     public void SavePlayerData()
     {
-        //Save as a list
+        //ALt save data list
+        List<Player> saveListData = Game.Instance.LoadTestData();
 
-        List<Player> saveListData = new List<Player>();
+        //Save as a list
+        //List<Player> saveListData = new List<Player>();
 
         //calling Singleton GAME payer object
         Player playerFromSingleton = Game.Instance.ReturnPlayerObj();
         saveListData.Add(playerFromSingleton);
        
         Debug.Log("TEST (1): " + playerFromSingleton.Name + " score " + playerFromSingleton.Score);
-
 
         //Must be saved as JSON list
         string jsonToSave = JsonHelper.ToJson(saveListData.ToArray());
