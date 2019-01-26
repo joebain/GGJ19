@@ -8,7 +8,7 @@ public class MapGenerator : MonoBehaviour
     public Tilemap tilemap;
     public int SectionCount = 100;
 
-    public PipeSection[] SectionPrefabs;
+    //public PipeSection[] SectionPrefabs;
 
     private List<PipeSection> pipeSections;
     private Dictionary<PipeSection.JointType, List<PipeSection>> sectionDictionary;
@@ -24,7 +24,7 @@ public class MapGenerator : MonoBehaviour
 
     public void DoGenerateMap()
     {
-        GenerateMap(UnityEngine.Random.Range(1, 100000));
+        GenerateMap(new System.Random().Next());
     }
     
 
@@ -33,6 +33,10 @@ public class MapGenerator : MonoBehaviour
         PreprocessSections();
 
         tilemap.ClearAllTiles();
+        for (int c = tilemap.transform.childCount-1; c >= 0; c--)
+        {
+            DestroyImmediate(tilemap.transform.GetChild(c).gameObject);
+        }
         GenerateSections(seed);
         GenerateTiles();
 
@@ -75,12 +79,21 @@ public class MapGenerator : MonoBehaviour
             Vector3Int sectionOffset = new Vector3Int(0, -Mathf.FloorToInt(pipeSection.SectionSize.size.y*0.5f), 0);
             BoundsInt writePos = new BoundsInt(cursor + sectionOffset, pipeSection.SectionSize.size);
             tilemap.SetTilesBlock(writePos, tiles);
-            cursor += Vector3Int.right*pipeSection.SectionSize.size.x + Vector3Int.up * pipeSection.VerticalOffset;
+
+            foreach (Transform child in pipeSection.transform) {
+                Transform thing = Instantiate(child);
+                thing.parent = tilemap.transform;
+                thing.position = thing.localPosition + cursor;
+            }
+
+            cursor += Vector3Int.right * pipeSection.SectionSize.size.x + Vector3Int.up * pipeSection.VerticalOffset;
         }
     }
 
     private void PreprocessSections()
     {
+        var SectionPrefabs = Resources.LoadAll<PipeSection>("PipeSections");
+
         sectionDictionary = new Dictionary<PipeSection.JointType, List<PipeSection>>();
         sectionInstances = new List<PipeSection>();
         for (int p = 0; p < SectionPrefabs.Length; p++)
