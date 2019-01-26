@@ -43,6 +43,12 @@ public class Player
         Score = aScore;
     }
 
+    public Player()
+    {
+        Name = "UNKNNOWN";
+        Score = 00000;
+    }
+
     public string LoadSaveFromJSON()
     {
         Debug.Log("Error downloading from web FAILED");
@@ -54,4 +60,28 @@ public class Player
     }
 
 
+}
+
+// WRapper to help Player be saved as a LIST curently unsppported as Unity
+public static class JsonHelper
+{
+
+    public static T[] FromJson<T>(string json)
+    {
+        Wrapper<T> wrapper = UnityEngine.JsonUtility.FromJson<Wrapper<T>>(json);
+        return wrapper.Items;
+    }
+
+    public static string ToJson<T>(T[] array)
+    {
+        Wrapper<T> wrapper = new Wrapper<T>();
+        wrapper.Items = array;
+        return UnityEngine.JsonUtility.ToJson(wrapper);
+    }
+
+    [Serializable]
+    private class Wrapper<T>
+    {
+        public T[] Items;
+    }
 }
