@@ -12,7 +12,7 @@ public class Game : MonoBehaviour
 
     private void Awake()
     {
-        LoadTestData();
+        //LoadTestData();
     }
 
     // Start is called before the first frame update
