@@ -67,10 +67,10 @@ public class HighScores : MonoBehaviour
     public void SavePlayerData()
     {
         //ALt save data list
-        List<Player> saveListData = Game.Instance.LoadTestData();
+        //List<Player> saveListData = Game.Instance.LoadTestData();
 
         //Save as a list
-        //List<Player> saveListData = new List<Player>();
+        List<Player> saveListData = new List<Player>();
 
         //calling Singleton GAME payer object
         Player playerFromSingleton = Game.Instance.ReturnPlayerObj();
