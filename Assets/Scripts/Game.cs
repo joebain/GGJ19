@@ -7,7 +7,7 @@ using System.Linq;
 public class Game : MonoBehaviour
 {
     public static Game Instance = null;
-    private Player player;
+    public Player player;
 
     private void Awake()
     {
