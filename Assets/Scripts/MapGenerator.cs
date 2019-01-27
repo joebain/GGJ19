@@ -24,6 +24,9 @@ public class MapGenerator : MonoBehaviour
 
     public string PipeSectionsFolder = "PipeSections";
 
+    public PipeSection StartSection, EndSection;
+    private PipeSection smallToMediumSection;
+
     public void DoGenerateMap()
     {
         GenerateMap(new System.Random().Next());
@@ -43,9 +46,18 @@ public class MapGenerator : MonoBehaviour
                 DestroyImmediate(tilemaps[t].transform.GetChild(c).gameObject);
             }
         }
-        GenerateSections(seed);
-        GenerateTiles();
 
+        try
+        {
+            GenerateSections(seed);
+            GenerateTiles();
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("There was an error generating the map");
+            Debug.LogError(e.Message);
+            Debug.LogError(e.StackTrace);
+        }
         PostProcess();
     }
 
@@ -62,8 +74,9 @@ public class MapGenerator : MonoBehaviour
         var rng = new System.Random(seed);
 
         pipeSections = new List<PipeSection>();
+        pipeSections.Add(StartSection);
 
-        PipeSection prevSection = null, nextSection;
+        PipeSection prevSection = StartSection, nextSection;
         for (int s = 0; s < SectionCount; s++)
         {
             List<PipeSection> possibleSections = prevSection == null ? new List<PipeSection>(sectionInstances) : sectionDictionary[prevSection.EndJoint];
@@ -71,13 +84,18 @@ public class MapGenerator : MonoBehaviour
             pipeSections.Add(nextSection);
             prevSection = nextSection;
         }
+        if (prevSection.EndJoint == PipeSection.JointType.Small)
+        {
+            pipeSections.Add(smallToMediumSection);
+        }
+        pipeSections.Add(EndSection);
     }
 
     private void GenerateTiles()
     {
         Vector3Int cursor = new Vector3Int(0, 0, 0);
         
-        for (int s = 0; s < pipeSections.Count - 1; s++)
+        for (int s = 0; s < pipeSections.Count; s++)
         {
             PipeSection pipeSection = pipeSections[s];
             for (int t = 0; t < pipeSection.Tilemaps.Length; t++)
@@ -120,6 +138,11 @@ public class MapGenerator : MonoBehaviour
                 sectionDictionary[section.StartJoint] = new List<PipeSection>();
             }
             sectionDictionary[section.StartJoint].Add(section);
+
+            if (smallToMediumSection == null && section.StartJoint == PipeSection.JointType.Small && section.EndJoint == PipeSection.JointType.Medium)
+            {
+                smallToMediumSection = section;
+            }
         }
     }
     
