@@ -65,7 +65,7 @@ public class SmallUrchinMovement : MonoBehaviour
         {
             body.velocity = new Vector2(0.0f, -6.0f);
             // wait couple of seconds
-            print("changed velocity");
+            // print("changed velocity");
         }
         else if (collided_bottom == true)
         {
