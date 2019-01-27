@@ -27,7 +27,9 @@ public class HUDController : MonoBehaviour
 
     public void ShowGameOver()
     {
-        SceneManager.LoadScene("GameOver");
-        //GameOverStuff.SetActive(true);
+        Debug.Log("SCore: " + Game.Instance.player.Score);
+
+        //SceneManager.LoadScene("GameOver");
+        GameOverStuff.SetActive(true);
     }
 }
