@@ -13,9 +13,12 @@ public class MapGenerator : MonoBehaviour
     private List<PipeSection> pipeSections;
     private Dictionary<PipeSection.JointType, List<PipeSection>> sectionDictionary;
     private List<PipeSection> sectionInstances;
+    public int difficulty_cnt;
+    public int attempts;
 
     void Start()
     {
+        difficulty_cnt = 0;
         DoGenerateMap();
     }
     
@@ -72,15 +75,29 @@ public class MapGenerator : MonoBehaviour
     private void GenerateSections(int seed)
     {
         var rng = new System.Random(seed);
+        attempts = 0;
 
         pipeSections = new List<PipeSection>();
         pipeSections.Add(StartSection);
+
 
         PipeSection prevSection = StartSection, nextSection;
         for (int s = 0; s < SectionCount; s++)
         {
             List<PipeSection> possibleSections = prevSection == null ? new List<PipeSection>(sectionInstances) : sectionDictionary[prevSection.EndJoint];
             nextSection = possibleSections[rng.Next(possibleSections.Count)];
+
+            difficulty_cnt += nextSection.difficulty;
+
+            if (difficulty_cnt > 5 || difficulty_cnt < -4 && attempts < 10)
+            {
+                // reset the counters and go back to the same iteration of the loop
+                print("too hard!");
+                difficulty_cnt -= nextSection.difficulty;
+                s -= 1;
+                attempts += 1;
+                continue;
+            }
             pipeSections.Add(nextSection);
             prevSection = nextSection;
         }
