@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
-[RequireComponent(typeof(Tilemap))]
 public class PipeSection : MonoBehaviour
 {
     public enum JointType
@@ -12,10 +11,10 @@ public class PipeSection : MonoBehaviour
     }
 
     public JointType StartJoint, EndJoint;
-    private Tilemap tilemap;
+    public Tilemap[] tilemaps;
 
-    public BoundsInt SectionSize { get { return tilemap.cellBounds; } }
+    public BoundsInt SectionSize { get { return tilemaps[0].cellBounds; } }
     public int VerticalOffset = 0;
 
-    public Tilemap Tilemap { get { if (tilemap == null) { tilemap = GetComponent<Tilemap>(); } return tilemap; } }
+    public Tilemap[] Tilemaps { get { return tilemaps; } }
 }
