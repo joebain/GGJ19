@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time - boostTime > BOOST_COOLDOWN)
         {
             boostTime = Time.time;
+            AkSoundEngine.PostEvent("FishSpeedBurst", gameObject);
         }
         if (Input.GetKey(KeyCode.Space) && Time.time - boostTime < BOOST_DURATION)
         {

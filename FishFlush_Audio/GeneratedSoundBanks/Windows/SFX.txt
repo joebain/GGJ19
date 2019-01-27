@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	303266102	MenuHover			\Default Work Unit\MenuHover	
+	523963140	RatNoise			\Default Work Unit\RatNoise	
+	664555880	MenuSelect			\Default Work Unit\MenuSelect	
+	1521187885	StartGame			\Default Work Unit\StartGame	
+	1637891311	FishDeath			\Default Work Unit\FishDeath	
+	2560187634	FishSpeedBurst			\Default Work Unit\FishSpeedBurst	
+	2716678721	Victory			\Default Work Unit\Victory	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	156529483	MenuHover	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\MenuHover_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuHover		5417
+	188036111	StartGame	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\Toilet 6109_38_6F5F1756.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\StartGame		84420
+	432834030	Victory	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\BellTree 6027_01_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Victory		46153
+	469883707	ComedySplat 6103_62_1	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedySplat 6103_62_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\ComedySplat 6103_62_1		5707
+	725162259	MenuSelect	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\MenuSelect_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuSelect		2514
+	870333581	Rat_Noise	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\CartoonScratch 6045_45_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Rat_Noise		9940
+	965202461	Fish_SpeedBurst	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedyFishFlap 6103_58_4_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_SpeedBurst		21384
+	1034865986	ComedySplat 6103_62_2	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedySplat 6103_62_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\ComedySplat 6103_62_2		4725
+

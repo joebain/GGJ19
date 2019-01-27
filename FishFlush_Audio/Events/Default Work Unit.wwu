@@ -79,6 +79,104 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Victory" ID="{FDFF33A3-B91C-435A-9636-7AFE9206D860}">
+					<ChildrenList>
+						<Action Name="" ID="{9CDB55FE-6DFA-487D-833D-564506B8561A}" ShortID="368615983">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{2B8BF95C-9418-4D66-85CA-CF50B9E09663}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuHover" ID="{9DA8552B-BE30-477B-B9F2-D7161B529A8D}">
+					<ChildrenList>
+						<Action Name="" ID="{9A00F13C-14FA-4754-9492-3242B9EA3B5F}" ShortID="1041183950">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuHover" ID="{7E6788DF-8A3C-419F-B289-6FAB7BDC4A33}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuSelect" ID="{49C2A556-F98C-4611-9986-9BD796A51376}">
+					<ChildrenList>
+						<Action Name="" ID="{7B82C9D2-0DC5-4A15-B5A5-37382DA503B5}" ShortID="464465948">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuSelect" ID="{475A3B25-A08F-4098-8BDF-2C0020924325}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FishDeath" ID="{8874D146-D54B-48E8-887A-E199BAD76995}">
+					<ChildrenList>
+						<Action Name="" ID="{9CADB409-96CA-419D-963E-3C882A3E97F4}" ShortID="883676122">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fish_Death" ID="{37227E26-2049-4700-BC12-5849769771E0}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FishSpeedBurst" ID="{43C8B268-11A3-4540-B140-E0FE24E64F53}">
+					<ChildrenList>
+						<Action Name="" ID="{65C78080-30DA-41E2-96ED-909088D09567}" ShortID="314341073">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fish_SpeedBurst" ID="{CB3C6910-BC71-47B0-BA47-F2374B80A214}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartGame" ID="{7C7ACBD4-9343-427B-B3AD-7EE1C8C9B883}">
+					<ChildrenList>
+						<Action Name="" ID="{27BA0EBF-920A-4868-BD18-098DBAD9CEC5}" ShortID="489909569">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StartGame" ID="{CE3B70B7-BB86-4464-BE9D-5BE2AB56BB07}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RatNoise" ID="{C08E5C2E-D376-42AC-B8A2-E97CA8EF61D8}">
+					<ChildrenList>
+						<Action Name="" ID="{5133BC60-60CD-4DAF-9125-08F94616D8E6}" ShortID="89098681">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rat_Noise" ID="{3B02CFC8-B278-4FBE-9D4B-9C095073B188}" WorkUnitID="{0A7F33B1-788F-4E40-B92C-5A149BA83248}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,6 +15,49 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1637891311" Name="FishDeath" ObjectPath="\Events\Default Work Unit\FishDeath"/>
+				<Event Id="2560187634" Name="FishSpeedBurst" ObjectPath="\Events\Default Work Unit\FishSpeedBurst"/>
+				<Event Id="303266102" Name="MenuHover" ObjectPath="\Events\Default Work Unit\MenuHover"/>
+				<Event Id="664555880" Name="MenuSelect" ObjectPath="\Events\Default Work Unit\MenuSelect"/>
+				<Event Id="523963140" Name="RatNoise" ObjectPath="\Events\Default Work Unit\RatNoise"/>
+				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="156529483" Language="SFX">
+					<ShortName>MenuHover.wav</ShortName>
+					<Path>SFX\MenuHover_DFAE2F06.wem</Path>
+				</File>
+				<File Id="188036111" Language="SFX">
+					<ShortName>Toilet 6109_38.wav</ShortName>
+					<Path>SFX\Toilet 6109_38_6F5F1756.wem</Path>
+				</File>
+				<File Id="432834030" Language="SFX">
+					<ShortName>BellTree 6027_01_1.wav</ShortName>
+					<Path>SFX\BellTree 6027_01_1_DFAE2F06.wem</Path>
+				</File>
+				<File Id="469883707" Language="SFX">
+					<ShortName>ComedySplat 6103_62_1.wav</ShortName>
+					<Path>SFX\ComedySplat 6103_62_1_DFAE2F06.wem</Path>
+				</File>
+				<File Id="725162259" Language="SFX">
+					<ShortName>MenuSelect.wav</ShortName>
+					<Path>SFX\MenuSelect_DFAE2F06.wem</Path>
+				</File>
+				<File Id="870333581" Language="SFX">
+					<ShortName>CartoonScratch 6045_45_2.wav</ShortName>
+					<Path>SFX\CartoonScratch 6045_45_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="965202461" Language="SFX">
+					<ShortName>ComedyFishFlap 6103_58_4.wav</ShortName>
+					<Path>SFX\ComedyFishFlap 6103_58_4_DFAE2F06.wem</Path>
+				</File>
+				<File Id="1034865986" Language="SFX">
+					<ShortName>ComedySplat 6103_62_2.wav</ShortName>
+					<Path>SFX\ComedySplat 6103_62_2_DFAE2F06.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>

@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.collider.CompareTag("Deadly"))
         {
             Debug.Log("dying");
+            AkSoundEngine.PostEvent("FishDeath", gameObject);
             HUDController.Instance.ShowGameOver();
             Time.timeScale = 0;
             StartCoroutine(GoToEndScreen());

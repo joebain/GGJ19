@@ -28,7 +28,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 188509f43f867441b6f5ee594e08acc2
-    m_lastTime: -8586530168194775808
+    m_lastTime: -8586530068324775808
     List:
     - name: Music
       guid: 013e7dc11fb69b41aa751bc4bbfda664
@@ -52,8 +52,56 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ddf1b14f080ea64fae642ca1020f6b70
-    m_lastTime: -8586530168194775808
+    m_lastTime: -8586530068324775808
     List:
+    - name: FishDeath
+      guid: 46d174884bd5e848887ae199bad76995
+      id: 1637891311
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FishDeath
+        ObjectType: 3
+      Path: Default Work Unit\FishDeath
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FishSpeedBurst
+      guid: 68b2c843a3114045b140e0fe24e64f53
+      id: 2560187634
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FishSpeedBurst
+        ObjectType: 3
+      Path: Default Work Unit\FishSpeedBurst
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MenuHover
+      guid: 2b55a89d30be7b47b9f2d7161b529a8d
+      id: 303266102
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuHover
+        ObjectType: 3
+      Path: Default Work Unit\MenuHover
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MenuSelect
+      guid: 56a5c2498cf9114699869bd796a51376
+      id: 664555880
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuSelect
+        ObjectType: 3
+      Path: Default Work Unit\MenuSelect
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Pause_Music
       guid: 5a2a14d9b65d8e47973d40c630625c42
       id: 2735935537
@@ -90,6 +138,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: RatNoise
+      guid: 2e5c8ec076d3ac42b8a2e97ca8ef61d8
+      id: 523963140
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RatNoise
+        ObjectType: 3
+      Path: Default Work Unit\RatNoise
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Resume_Music
       guid: 938b53186fdf3d438630c2e12a9f7492
       id: 2940177080
@@ -99,6 +159,30 @@ MonoBehaviour:
       - ElementName: Resume_Music
         ObjectType: 3
       Path: Default Work Unit\Resume_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StartGame
+      guid: d4cb7a7c43937b42b3ad7ee1c8c9b883
+      id: 1521187885
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartGame
+        ObjectType: 3
+      Path: Default Work Unit\StartGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Victory
+      guid: a333fffd1cb95a4396367afe9206d860
+      id: 2716678721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Victory
+        ObjectType: 3
+      Path: Default Work Unit\Victory
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -130,7 +214,5 @@ MonoBehaviour:
   - /FishFlush_Audio
   - /FishFlush_Audio/Events
   - /FishFlush_Audio/Events/Default Work Unit
-  - /FishFlush_Audio/SoundBanks
-  - /FishFlush_Audio/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -23,6 +23,8 @@ public class LevelEndTrigger : MonoBehaviour
 
     private IEnumerator SuckPlayerDownPipe(PlayerMovement player)
     {
+        AkSoundEngine.PostEvent("Victory", gameObject);
+
         player.enabled = false;
         Rigidbody2D body = player.GetComponent<Rigidbody2D>();
         body.isKinematic = true;

@@ -33,6 +33,7 @@ public class RatEnemy : MonoBehaviour
         {
             Debug.Log("PLAYER ATTACK");
             anim.SetBool("IsAttacking", true);
+            AkSoundEngine.PostEvent("RatNoise", gameObject);
         }
         else
         {

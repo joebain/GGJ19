@@ -14,7 +14,15 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="SFX" ID="{6EF125C2-C2F5-4FFE-8475-3A519D55AB45}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="StartGame" ID="{7C7ACBD4-9343-427B-B3AD-7EE1C8C9B883}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RatNoise" ID="{C08E5C2E-D376-42AC-B8A2-E97CA8EF61D8}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Victory" ID="{FDFF33A3-B91C-435A-9636-7AFE9206D860}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FishSpeedBurst" ID="{43C8B268-11A3-4540-B140-E0FE24E64F53}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuSelect" ID="{49C2A556-F98C-4611-9986-9BD796A51376}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuHover" ID="{9DA8552B-BE30-477B-B9F2-D7161B529A8D}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FishDeath" ID="{8874D146-D54B-48E8-887A-E199BAD76995}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

@@ -7,8 +7,7 @@ public class MusicTrigger : MonoBehaviour
     public string EventName;
     public float Delay = 0;
 
-    //[InspectorButton("DoPlay")]
-    //public bool _doPlay;
+    public static string MusicPlaying;
 
     void Start()
     {
@@ -23,7 +22,11 @@ public class MusicTrigger : MonoBehaviour
 
     private void DoPlay()
     {
-        Debug.Log("play " + EventName);
-        AkSoundEngine.PostEvent(EventName, gameObject);
+        Debug.Log("do play " + EventName + ", music playing: " + MusicPlaying);
+        if (MusicPlaying != EventName)
+        {
+            AkSoundEngine.PostEvent(EventName, gameObject);
+            MusicPlaying = EventName;
+        }
     }
 }
