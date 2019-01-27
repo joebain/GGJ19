@@ -14744,11 +14744,12 @@ MonoBehaviour:
   - {fileID: 1500481919}
   - {fileID: 1378220141}
   - {fileID: 956478176}
-  SectionCount: 3
+  SectionCount: 10
   difficulty_cnt: 0
+  difficulty: 0
   attempts: 0
   _doGenerateMap: 0
-  PipeSectionsFolder: TestPipeSections
+  PipeSectionsFolder: NewPipeSections
   StartSection: {fileID: 4207734167306017191, guid: a12af10f8c0288749b62a3dbeabb7594,
     type: 3}
   EndSection: {fileID: 4207734167306017191, guid: 9b64fa6347c0a0843a843839c09459cc,

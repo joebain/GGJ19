@@ -97,7 +97,7 @@ public class MapGenerator : MonoBehaviour
             
             
 
-            if (difficulty_cnt > 5 || difficulty_cnt < -4 && attempts < 10)
+            if (difficulty_cnt > max_difficulty || difficulty_cnt < -4 && attempts < 10)
             {
                 // reset the counters and go back to the same iteration of the loop
                 print("too hard!");
