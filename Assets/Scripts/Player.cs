@@ -9,6 +9,7 @@ public class Player
 {
     public string Name;
     public int Score;
+    public int LevelNumber;
     [SerializeField]
     private int score
     {
@@ -44,6 +45,7 @@ public class Player
     {
         Name = "UNKNNOWN";
         Score = 00000;
+        LevelNumber = 0;
     }
 
     public string LoadSaveFromJSON()

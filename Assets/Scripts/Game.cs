@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
+using System;
 
 public class Game : MonoBehaviour
 {
@@ -27,7 +28,10 @@ public class Game : MonoBehaviour
         else if (Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+
+        DontDestroyOnLoad(gameObject);
 
     }
 
@@ -38,6 +42,13 @@ public class Game : MonoBehaviour
             prevSec = Mathf.Floor(Time.time);
             player.Score++;
         }
+    }
+
+
+    public void NextLevel()
+    {
+        player.LevelNumber++;
+        player.Score += 100;
     }
 
     public Player ReturnPlayerObj()
