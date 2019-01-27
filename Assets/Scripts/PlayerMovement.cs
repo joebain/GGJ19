@@ -47,8 +47,8 @@ public class PlayerMovement : MonoBehaviour
     {
         velocity = body.GetRelativePointVelocity(relative_point);
         mag = velocity.magnitude;
-        print(velocity);
-        print(mag);
+        // print(velocity);
+        // print(mag);
 
         if (KEY_HOLD_FLAG)
         {
@@ -59,27 +59,27 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 body.AddForce(UP);
-                print("W pressed");
+                // print("W pressed");
             }
             if (Input.GetKey(KeyCode.A))
             {
                 body.AddForce(LEFT);
-                print("A pressed");
+                // print("A pressed");
             }
             if (Input.GetKey(KeyCode.S))
             {
                 body.AddForce(DOWN);
-                print("S pressed");
+                // print("S pressed");
             }
             if (Input.GetKey(KeyCode.D))
             {
                 body.AddForce(RIGHT);
-                print("D pressed");
+                // print("D pressed");
             }
             if (Input.GetKeyDown(KeyCode.Space) && FORWARD_BOOST_FLAG)
             {
                 body.AddForce(BOOST);
-                print("Space pressed");
+                // print("Space pressed");
             }
         }
         else if (KEY_TAP_FLAG && mag < 4)
@@ -87,27 +87,27 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 body.AddForce(UP);
-                print("W pressed");
+                // print("W pressed");
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
                 body.AddForce(LEFT);
-                print("A pressed");
+                // print("A pressed");
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
                 body.AddForce(DOWN);
-                print("S pressed");
+                // print("S pressed");
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
                 body.AddForce(RIGHT);
-                print("D pressed");
+                // print("D pressed");
             }
             if (Input.GetKeyDown(KeyCode.Space) && FORWARD_BOOST_FLAG)
             {
                 body.AddForce(BOOST);
-                print("BOOSTING!!!!");
+                // print("BOOSTING!!!!");
             }
         }
     }
