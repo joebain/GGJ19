@@ -1199,23 +1199,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 931789717, guid: 8662343661045db4bb1be39ae459d748, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.039215688
-      objectReference: {fileID: 0}
-    - target: {fileID: 931789717, guid: 8662343661045db4bb1be39ae459d748, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.2784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 931789717, guid: 8662343661045db4bb1be39ae459d748, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.10980392
-      objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608073, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8662343661045db4bb1be39ae459d748, type: 3}
 --- !u!1 &1298917030
@@ -6859,7 +6842,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6975,7 +6958,7 @@ GameObject:
   - component: {fileID: 1500481922}
   - component: {fileID: 1500481921}
   - component: {fileID: 1500481920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -12435,7 +12418,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
