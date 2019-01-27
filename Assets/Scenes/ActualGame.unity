@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subject: {fileID: 1168042186}
+  xOffset: 0
 --- !u!114 &833876284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,7 +836,7 @@ PrefabInstance:
     - target: {fileID: 6423269474530608078, guid: 8662343661045db4bb1be39ae459d748,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 6423269474530608078, guid: 8662343661045db4bb1be39ae459d748,
         type: 3}
