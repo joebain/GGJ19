@@ -54,4 +54,5 @@ todo*
 # Wwise
 .cache/
 
-
+# Intellija Rider
+.idea
