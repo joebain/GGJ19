@@ -8,6 +8,7 @@ public class MusicTrigger : MonoBehaviour
     public float Delay = 0;
 
     public static string MusicPlaying;
+    private static bool debugAlreadyStarted;
 
     void Start()
     {
@@ -22,11 +23,17 @@ public class MusicTrigger : MonoBehaviour
 
     private void DoPlay()
     {
-        Debug.Log("do play " + EventName + ", music playing: " + MusicPlaying);
+        if (debugAlreadyStarted) return;
+        debugAlreadyStarted = true;
         if (MusicPlaying != EventName)
         {
+            Debug.Log("do play " + EventName + ", music playing: " + MusicPlaying);
             AkSoundEngine.PostEvent(EventName, gameObject);
             MusicPlaying = EventName;
+        }
+        else
+        {
+            Debug.Log("avoiding playing " + EventName + ", music playing: " + MusicPlaying);
         }
     }
 }
