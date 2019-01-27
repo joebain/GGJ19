@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="89">
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Attenuations\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Audio Devices\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Control Surface Sessions\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Conversion Settings\Default Work Unit.wwu" DateLow="1548575504" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1547745578" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Effects\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Effects\Factory Effects.wwu" DateLow="1547745578" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Events\Default Work Unit.wwu" DateLow="1548590066" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\FishFlush_Audio.wproj" DateLow="1548590065" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Game Parameters\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1548590066" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548575504" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Mixing Sessions\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Modulators\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Presets\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Queries\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Queries\Factory Queries.wwu" DateLow="1547745578" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\SoundBanks\Default Work Unit.wwu" DateLow="1548590066" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\States\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Switches\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Triggers\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\joe\Code\GGJ19\FishFlush_Audio\Virtual Acoustics\Default Work Unit.wwu" DateLow="1548575294" DateHigh="0"/>
+</ValidationCache>

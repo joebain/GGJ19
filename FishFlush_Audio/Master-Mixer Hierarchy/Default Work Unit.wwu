@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{32A6E4F8-5865-4C5F-BDEB-6F3F2EC88F9F}" SchemaVersion="89">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{32A6E4F8-5865-4C5F-BDEB-6F3F2EC88F9F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{D112C663-F2AD-41C1-980F-965A1102B2B5}" WorkUnitID="{D87F6679-9777-4F71-B43B-FB8F61AA4394}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{7F6AE20D-FFAD-407F-8A83-1FDB76D4E709}"/>
+						<Bus Name="SFX" ID="{7FFEF647-1848-418E-B0DB-B8846032A123}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music" ID="{7F6AE20D-FFAD-407F-8A83-1FDB76D4E709}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

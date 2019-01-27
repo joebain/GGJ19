@@ -4,6 +4,24 @@ using UnityEngine;
 
 public class Sounder : MonoBehaviour
 {
+    [InspectorButton("PlayMusic01")]
+    public bool _playMusic01;
+    [InspectorButton("PlayMusic02")]
+    public bool _playMusic02;
+
+    static Sounder instance;
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void PlaySFX01()
     {
         AkSoundEngine.PostEvent("Play_SFX_01", gameObject);
@@ -31,12 +49,12 @@ public class Sounder : MonoBehaviour
 
     public void PlayMusic01()
     {
-        AkSoundEngine.PostEvent("Play_Music_01", gameObject);
+        AkSoundEngine.PostEvent("Play_LevelMusic", gameObject);
     }
 
     public void PlayMusic02()
     {
-        AkSoundEngine.PostEvent("Play_Music_02", gameObject);
+        AkSoundEngine.PostEvent("Play_MenuMusic", gameObject);
     }
 
     public void PauseMusic()
@@ -46,6 +64,6 @@ public class Sounder : MonoBehaviour
 
     public void UnpauseMusic()
     {
-        AkSoundEngine.PostEvent("Unpause_Music", gameObject);
+        AkSoundEngine.PostEvent("Resume_Music", gameObject);
     }
 }

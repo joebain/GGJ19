@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2570041344	Play_MenuMusic			\Default Work Unit\Play_MenuMusic	
+	2671044069	Play_LevelMusic			\Default Work Unit\Play_LevelMusic	
+	2735935537	Pause_Music			\Default Work Unit\Pause_Music	
+	2940177080	Resume_Music			\Default Work Unit\Resume_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	48533713	Drums_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Drums_01_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Drums_01		81129
+	206690141	Gtr_Solo_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Gtr_Solo_02_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Gtr_Solo_01		134413
+	256240475	Clav_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Clav_01_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Clav_01		122526
+	343274969	FunkFishMenu_Stems Keys	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\FunkFishMenu_Stems Keys_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Main\FunkFishMenu_Stems Keys		12509
+	362909530	GTR_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\GTR_01_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\GTR_01		80309
+	440909111	FunkFishMenu_Stems Horns	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\FunkFishMenu_Stems Horns_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Main\FunkFishMenu_Stems Horns		81522
+	495730434	FunkFishMenu_Stems Bass	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\FunkFishMenu_Stems Bass_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Main\FunkFishMenu_Stems Bass		21730
+	504021482	Clav_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Clav_02_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Clav_01		95945
+	697786283	Bass_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Bass_01_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Bass_01		68220
+	801321307	Gtr_Solo_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Gtr_Solo_01_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Gtr_Solo_01		129486
+	808888493	FunkFishMenu_Stems Guitar	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\FunkFishMenu_Stems Guitar_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Main\FunkFishMenu_Stems Guitar		98436
+	812987571	Bass_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Bass_02_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Bass_01		66187
+	823557663	Clav_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Clav_03_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\Clav_01		92052
+	1030537737	FunkFishMenu_Stems Drums	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\FunkFishMenu_Stems Drums_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Main\FunkFishMenu_Stems Drums		93577
+	1043212719	GTR_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\GTR_03_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\GTR_01		112988
+	1053924720	GTR_01	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\GTR_02_E8A94D20.wem		\Interactive Music Hierarchy\Default Work Unit\Level\Main\GTR_01		113360
+

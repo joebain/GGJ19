@@ -1352,7 +1352,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1337fd136e818144db0de5710e1f9ee6,
+    WwiseObjectReference: {fileID: 11400000, guid: 63c6d653d2361ac41bc55fe050eedd84,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: cdbd99e725dea064a9d662f62e855518,
+    WwiseObjectReference: {fileID: 11400000, guid: b2bdae7dcc1af4d48b11a9ed0f0cd224,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0

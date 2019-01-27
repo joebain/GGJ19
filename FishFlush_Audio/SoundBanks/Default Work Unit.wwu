@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F4098518-863F-4174-B6F5-EE594E08ACC2}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{F4098518-863F-4174-B6F5-EE594E08ACC2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Music" ID="{C17D3E01-B61F-419B-AA75-1BC4BBFDA664}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_LevelMusic" ID="{C1B5FB14-2AA8-42E5-A084-A1665CBF3388}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Resume_Music" ID="{18538B93-DF6F-433D-8630-C2E12A9F7492}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MenuMusic" ID="{E8979418-0223-4463-BC2C-1F32C1205B79}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pause_Music" ID="{D9142A5A-5DB6-478E-973D-40C630625C42}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX" ID="{6EF125C2-C2F5-4FFE-8475-3A519D55AB45}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

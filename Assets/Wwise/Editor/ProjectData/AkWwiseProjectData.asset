@@ -15,23 +15,23 @@ MonoBehaviour:
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 3d69a322798063488bb9bd634a851840
-    m_lastTime: -8586531889194348606
+    guid: 2ded17f3fe72a7478410474a1f237b6b
+    m_lastTime: -8586530315914775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 4a4280be9b025c48b498fcd580e3366b
-    m_lastTime: -8586531889216368325
+    guid: f8e4a63265585f4cbdeb6f3f2ec88f9f
+    m_lastTime: -8586530313814775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 4aa3e77f0921044588e0dca9ac49a144
-    m_lastTime: -8586531889195446190
+    guid: 188509f43f867441b6f5ee594e08acc2
+    m_lastTime: -8586530168194775808
     List:
     - name: Music
-      guid: 12299586e0e9754ebbe773c507f93017
+      guid: 013e7dc11fb69b41aa751bc4bbfda664
       id: 3991942870
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -40,7 +40,7 @@ MonoBehaviour:
         ObjectType: 7
       Path: Default Work Unit\Music
     - name: SFX
-      guid: b0a071449d862e458827c00f91b11577
+      guid: c225f16ef5c2fe4f84753a519d55ab45
       id: 393239870
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -51,11 +51,11 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: ef28d07401a7ac4ead81c4fcda4bfc20
-    m_lastTime: -8586531889223100320
+    guid: ddf1b14f080ea64fae642ca1020f6b70
+    m_lastTime: -8586530168194775808
     List:
     - name: Pause_Music
-      guid: ad140f18838da14c92c2e6c5b912b9ef
+      guid: 5a2a14d9b65d8e47973d40c630625c42
       id: 2735935537
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -66,129 +66,71 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Music_01
-      guid: 100571138ba6b24b98fba16e9975e443
-      id: 3709355747
+    - name: Play_LevelMusic
+      guid: 14fbb5c1a82ae542a084a1665cbf3388
+      id: 2671044069
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Music_01
+      - ElementName: Play_LevelMusic
         ObjectType: 3
-      Path: Default Work Unit\Play_Music_01
+      Path: Default Work Unit\Play_LevelMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Music_02
-      guid: 8841f2a450cd064a96cb2e38a8c070a5
-      id: 3709355744
+    - name: Play_MenuMusic
+      guid: 189497e823026344bc2c1f32c1205b79
+      id: 2570041344
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Music_02
+      - ElementName: Play_MenuMusic
         ObjectType: 3
-      Path: Default Work Unit\Play_Music_02
+      Path: Default Work Unit\Play_MenuMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_SFX_01
-      guid: 0fb0d31576af034c8eb56c632d441f4a
-      id: 3257337847
+    - name: Resume_Music
+      guid: 938b53186fdf3d438630c2e12a9f7492
+      id: 2940177080
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_SFX_01
+      - ElementName: Resume_Music
         ObjectType: 3
-      Path: Default Work Unit\Play_SFX_01
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_SFX_02
-      guid: 38801e675107b543b346ccfae882738e
-      id: 3257337844
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_SFX_02
-        ObjectType: 3
-      Path: Default Work Unit\Play_SFX_02
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_SFX_03
-      guid: 6c3e8d3e769f4547be63e15c9ab82655
-      id: 3257337845
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_SFX_03
-        ObjectType: 3
-      Path: Default Work Unit\Play_SFX_03
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_SFX_04
-      guid: 1e1ba26dd1fa594cbd00a54eb977ea7f
-      id: 3257337842
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_SFX_04
-        ObjectType: 3
-      Path: Default Work Unit\Play_SFX_04
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_SFX_05
-      guid: a971cd6f6021d549acfc9b07a57de6b1
-      id: 3257337843
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_SFX_05
-        ObjectType: 3
-      Path: Default Work Unit\Play_SFX_05
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: UnPause_Music
-      guid: 41911fc987218f4d86dc273517130316
-      id: 3712621630
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: UnPause_Music
-        ObjectType: 3
-      Path: Default Work Unit\UnPause_Music
+      Path: Default Work Unit\Resume_Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 2b45b25df702b34581666319197bed83
-    m_lastTime: -8586531889222890896
+    guid: 2f28318d343eec48b6cc2bcfa9a779b6
+    m_lastTime: -8586530315914775808
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: f4de8edcc4711541b27080f2f5150850
-    m_lastTime: -8586531889194997394
+    guid: 3242012f63d2fc4c8c8c0f83cb8f774d
+    m_lastTime: -8586530315914775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 124745f9e86f6949a7e4a9a5279be1d5
-    m_lastTime: -8586531889194787954
+    guid: 884de4f3a93be44394f37551565323e2
+    m_lastTime: -8586530315914775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 742bbf68d1f399448f0442a6e808ade4
-    m_lastTime: -8586531889194568033
+    guid: 26e195e1f39a764e83b29395c0cf90e3
+    m_lastTime: -8586530315914775808
     List: []
   ExpandedItems:
-  - /GGJ_WwiseDemo
-  - /GGJ_WwiseDemo/Events
-  - /GGJ_WwiseDemo/Events/Default Work Unit
+  - /FishFlush_Audio
+  - /FishFlush_Audio/Events
+  - /FishFlush_Audio/Events/Default Work Unit
+  - /FishFlush_Audio/SoundBanks
+  - /FishFlush_Audio/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

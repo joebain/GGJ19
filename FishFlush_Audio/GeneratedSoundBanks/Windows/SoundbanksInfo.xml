@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\joe\Code\GGJ19\FishFlush_Audio\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\joe\Code\GGJ19\FishFlush_Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\joe\Code\GGJ19\FishFlush_Audio\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2735935537" Name="Pause_Music" ObjectPath="\Events\Default Work Unit\Pause_Music"/>
+				<Event Id="2671044069" Name="Play_LevelMusic" ObjectPath="\Events\Default Work Unit\Play_LevelMusic"/>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Default Work Unit\Play_MenuMusic"/>
+				<Event Id="2940177080" Name="Resume_Music" ObjectPath="\Events\Default Work Unit\Resume_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="48533713" Language="SFX">
+					<ShortName>Drums_01.wav</ShortName>
+					<Path>SFX\Drums_01_E8A94D20.wem</Path>
+				</File>
+				<File Id="206690141" Language="SFX">
+					<ShortName>Gtr_Solo_02.wav</ShortName>
+					<Path>SFX\Gtr_Solo_02_E8A94D20.wem</Path>
+				</File>
+				<File Id="256240475" Language="SFX">
+					<ShortName>Clav_01.wav</ShortName>
+					<Path>SFX\Clav_01_E8A94D20.wem</Path>
+				</File>
+				<File Id="343274969" Language="SFX">
+					<ShortName>FunkFishMenu_Stems Keys.wav</ShortName>
+					<Path>SFX\FunkFishMenu_Stems Keys_E8A94D20.wem</Path>
+				</File>
+				<File Id="362909530" Language="SFX">
+					<ShortName>GTR_01.wav</ShortName>
+					<Path>SFX\GTR_01_E8A94D20.wem</Path>
+				</File>
+				<File Id="440909111" Language="SFX">
+					<ShortName>FunkFishMenu_Stems Horns.wav</ShortName>
+					<Path>SFX\FunkFishMenu_Stems Horns_E8A94D20.wem</Path>
+				</File>
+				<File Id="495730434" Language="SFX">
+					<ShortName>FunkFishMenu_Stems Bass.wav</ShortName>
+					<Path>SFX\FunkFishMenu_Stems Bass_E8A94D20.wem</Path>
+				</File>
+				<File Id="504021482" Language="SFX">
+					<ShortName>Clav_02.wav</ShortName>
+					<Path>SFX\Clav_02_E8A94D20.wem</Path>
+				</File>
+				<File Id="697786283" Language="SFX">
+					<ShortName>Bass_01.wav</ShortName>
+					<Path>SFX\Bass_01_E8A94D20.wem</Path>
+				</File>
+				<File Id="801321307" Language="SFX">
+					<ShortName>Gtr_Solo_01.wav</ShortName>
+					<Path>SFX\Gtr_Solo_01_E8A94D20.wem</Path>
+				</File>
+				<File Id="808888493" Language="SFX">
+					<ShortName>FunkFishMenu_Stems Guitar.wav</ShortName>
+					<Path>SFX\FunkFishMenu_Stems Guitar_E8A94D20.wem</Path>
+				</File>
+				<File Id="812987571" Language="SFX">
+					<ShortName>Bass_02.wav</ShortName>
+					<Path>SFX\Bass_02_E8A94D20.wem</Path>
+				</File>
+				<File Id="823557663" Language="SFX">
+					<ShortName>Clav_03.wav</ShortName>
+					<Path>SFX\Clav_03_E8A94D20.wem</Path>
+				</File>
+				<File Id="1030537737" Language="SFX">
+					<ShortName>FunkFishMenu_Stems Drums.wav</ShortName>
+					<Path>SFX\FunkFishMenu_Stems Drums_E8A94D20.wem</Path>
+				</File>
+				<File Id="1043212719" Language="SFX">
+					<ShortName>GTR_03.wav</ShortName>
+					<Path>SFX\GTR_03_E8A94D20.wem</Path>
+				</File>
+				<File Id="1053924720" Language="SFX">
+					<ShortName>GTR_02.wav</ShortName>
+					<Path>SFX\GTR_02_E8A94D20.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
