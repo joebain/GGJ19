@@ -307,31 +307,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608078, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608078, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608077, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608077, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6423269474530608077, guid: 8662343661045db4bb1be39ae459d748,
-        type: 3}
-      propertyPath: m_AutoTiling
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8662343661045db4bb1be39ae459d748, type: 3}
 --- !u!1001 &469290598
@@ -26871,10 +26846,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c707cc81679e14082113fc4ddb4c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   SPEED: 0
   TOP_SPEED: 4
 --- !u!61 &594514006
 BoxCollider2D:
+=======
+  tilemap: {fileID: 569921027}
+  SectionCount: 30
+  _doGenerateMap: 0
+--- !u!1001 &802216964
+PrefabInstance:
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -28689,6 +28672,7 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 6dc33008332c6ee45953019ac1fe7f3b, type: 3}
 --- !u!1 &1859744931
 GameObject:
@@ -29023,6 +29007,10 @@ Transform:
   m_PrefabInstance: {fileID: 197849651}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2103735040
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 1d7577429e171ef4e950ee846e3488c6, type: 3}
+--- !u!1001 &1802168537
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -29100,4 +29088,8 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 6dc33008332c6ee45953019ac1fe7f3b, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 1d7577429e171ef4e950ee846e3488c6, type: 3}
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2

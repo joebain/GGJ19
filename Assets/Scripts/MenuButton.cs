@@ -25,7 +25,8 @@ public class MenuButton : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Go to Controls has started");
+        Debug.Log("Go to game");
+        SceneManager.LoadScene("ActualGame");
     }
 
     public void ViewHighScores()

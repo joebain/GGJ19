@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float TOP_SPEED;
     public bool KEY_HOLD_FLAG;
     public bool KEY_TAP_FLAG;
-    public bool FORWARD_BOOST_FLAG;
+    public bool FORWARD_BOOST_FLAG;   
     Vector2 velocity;
     Vector2 relative_point;
     float mag;
@@ -47,8 +47,13 @@ public class PlayerMovement : MonoBehaviour
     {
         velocity = body.GetRelativePointVelocity(relative_point);
         mag = velocity.magnitude;
+<<<<<<< HEAD
         // print(velocity);
         // print(mag);
+=======
+        //print(velocity);
+        //print(mag);
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
 
         if (KEY_HOLD_FLAG)
         {
@@ -59,27 +64,47 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 body.AddForce(UP);
+<<<<<<< HEAD
                 // print("W pressed");
+=======
+                //print("W pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKey(KeyCode.A))
             {
                 body.AddForce(LEFT);
+<<<<<<< HEAD
                 // print("A pressed");
+=======
+                //print("A pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKey(KeyCode.S))
             {
                 body.AddForce(DOWN);
+<<<<<<< HEAD
                 // print("S pressed");
+=======
+                //print("S pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKey(KeyCode.D))
             {
                 body.AddForce(RIGHT);
+<<<<<<< HEAD
                 // print("D pressed");
+=======
+                //print("D pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKeyDown(KeyCode.Space) && FORWARD_BOOST_FLAG)
             {
                 body.AddForce(BOOST);
+<<<<<<< HEAD
                 // print("Space pressed");
+=======
+                //print("Space pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
         }
         else if (KEY_TAP_FLAG && mag < 4)
@@ -87,27 +112,47 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 body.AddForce(UP);
+<<<<<<< HEAD
                 // print("W pressed");
+=======
+                //print("W pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
                 body.AddForce(LEFT);
+<<<<<<< HEAD
                 // print("A pressed");
+=======
+                //print("A pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
                 body.AddForce(DOWN);
+<<<<<<< HEAD
                 // print("S pressed");
+=======
+                //print("S pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
                 body.AddForce(RIGHT);
+<<<<<<< HEAD
                 // print("D pressed");
+=======
+                //print("D pressed");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
             if (Input.GetKeyDown(KeyCode.Space) && FORWARD_BOOST_FLAG)
             {
                 body.AddForce(BOOST);
+<<<<<<< HEAD
                 // print("BOOSTING!!!!");
+=======
+                //print("BOOSTING!!!!");
+>>>>>>> b8e55a7028ca2e8824c2c9f6af6d563ed44c9af2
             }
         }
     }

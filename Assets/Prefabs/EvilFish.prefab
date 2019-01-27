@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6533790999746995777}
   m_Layer: 0
   m_Name: EvilFish
-  m_TagString: Untagged
+  m_TagString: Deadly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,9 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c707cc81679e14082113fc4ddb4c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UP: {x: 0, y: 0}
-  DOWN: {x: 0, y: 0}
-  LEFT: {x: 0, y: 0}
-  RIGHT: {x: 0, y: 0}
-  FORCE_APPLIED: 1
+  SPEED: 0
   TOP_SPEED: 4
