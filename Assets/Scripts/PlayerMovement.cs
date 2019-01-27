@@ -40,19 +40,19 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = velocity.normalized * topSpeed;
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             body.AddForce(Vector2.up*FORCE_APPLIED);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             body.AddForce(Vector2.left*FORCE_APPLIED);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             body.AddForce(Vector2.down*FORCE_APPLIED);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             body.AddForce(Vector2.right*FORCE_APPLIED);
         }
