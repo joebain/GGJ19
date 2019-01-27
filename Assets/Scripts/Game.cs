@@ -10,7 +10,7 @@ public class Game : MonoBehaviour
     public static Game Instance = null;
     public Player player;
     private float prevSec;
-    public bool IsHighscore;
+    public bool IsHighscore = false;
 
     private void Awake()
     {
@@ -107,6 +107,40 @@ public class Game : MonoBehaviour
 
         //string filePath = Application.dataPath + path;
         File.WriteAllText(path, jsonToSave);
+    }
+
+    public bool CheckIfHighScoreAchieved()
+    {
+        string path = Application.dataPath + "/SaveData/save.json";
+
+        if (File.Exists(path))
+        {
+            string dataAsJson = File.ReadAllText(path);
+
+            //Load as Array THEN
+            Player[] _tempLoadListData = JsonHelper.FromJson<Player>(dataAsJson);
+            //Convert to a List
+            List<Player> loadListData = _tempLoadListData.OfType<Player>().ToList();
+
+            foreach (var loadedPlayer in loadListData)
+            {
+                Debug.Log("LOADED player:" + loadedPlayer.Score);
+
+                if (player.Score >= loadedPlayer.Score)
+                {
+                    IsHighscore = true;
+                    return true;
+                }
+            }
+
+            IsHighscore = false;
+            return false;
+        }
+        else
+        {
+            return false;
+            Debug.LogError("Cannot load game data!");
+        }
     }
 
 }
