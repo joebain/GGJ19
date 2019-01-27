@@ -10,6 +10,7 @@ public class Game : MonoBehaviour
     public static Game Instance = null;
     public Player player;
     private float prevSec;
+    public bool IsHighscore;
 
     private void Awake()
     {

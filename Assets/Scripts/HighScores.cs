@@ -88,6 +88,10 @@ public class HighScores : MonoBehaviour
 
     }
 
-
+    public void Restart()
+    {
+        Debug.Log("Go to game");
+        SceneManager.LoadScene("ActualGame");
+    }
 
 }
