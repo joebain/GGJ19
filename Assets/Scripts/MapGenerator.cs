@@ -14,7 +14,7 @@ public class MapGenerator : MonoBehaviour
     private Dictionary<PipeSection.JointType, List<PipeSection>> sectionDictionary;
     private List<PipeSection> sectionInstances;
     public int difficulty_cnt;
-    private int difficulty;
+    public int difficulty;
     public int attempts;
 
     void Start()
@@ -78,8 +78,9 @@ public class MapGenerator : MonoBehaviour
     {
         var rng = new System.Random(seed);
         attempts = 0;
-        // int level_number = Game.Instance.Player.LevelNumber;
-        // int max_difficulty = difficulty * level_number;
+        int level_number = Game.Instance.player.LevelNumber;
+        
+        int max_difficulty = difficulty * level_number;
 
         pipeSections = new List<PipeSection>();
         pipeSections.Add(StartSection);
