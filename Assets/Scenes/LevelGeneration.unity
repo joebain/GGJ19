@@ -9342,6 +9342,10 @@ MonoBehaviour:
   SectionCount: 10
   _doGenerateMap: 0
   PipeSectionsFolder: NewPipeSections
+  StartSection: {fileID: 4207734167306017191, guid: a12af10f8c0288749b62a3dbeabb7594,
+    type: 3}
+  EndSection: {fileID: 4207734167306017191, guid: 9b64fa6347c0a0843a843839c09459cc,
+    type: 3}
 --- !u!1 &738977531
 GameObject:
   m_ObjectHideFlags: 0
