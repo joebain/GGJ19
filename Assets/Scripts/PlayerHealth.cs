@@ -9,12 +9,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.collider.CompareTag("Deadly"))
         {
-
-            //if (!Game.Instance.CheckIfHighScoreAchieved())
-            //{
-            //    HUDController.Instance.ShowGameOver();
-            //}
-
+            Debug.Log("dying");
+            HUDController.Instance.ShowGameOver();
             Time.timeScale = 0;
             StartCoroutine(GoToEndScreen());
         }
