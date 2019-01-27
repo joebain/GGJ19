@@ -3,15 +3,11 @@
 public class CameraController : MonoBehaviour
 {
     public Transform subject;
-    private float offset;
-
-    void Awake()
-    {
-        offset = transform.position.x - subject.position.x;
-    }
+    public float xOffset;
+    
 
     void LateUpdate()
     {
-        transform.position = new Vector3(subject.position.x + offset, transform.position.y, transform.position.z);
+        transform.position = new Vector3(subject.position.x + xOffset, transform.position.y, transform.position.z);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 DOWN;
     public Vector2 LEFT;
     public Vector2 RIGHT;
+
     public Vector2 BOOST;
     public float FORCE_APPLIED;
     public float TOP_SPEED;

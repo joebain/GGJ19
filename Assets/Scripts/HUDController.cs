@@ -5,6 +5,7 @@ public class HUDController : MonoBehaviour
 {
     public GameObject GameOverStuff;
     public Text Score;
+    public Text LevelCount;
 
     private static HUDController instance;
 
@@ -19,6 +20,7 @@ public class HUDController : MonoBehaviour
     void Update()
     {
         Score.text = Game.Instance.ReturnPlayerObj().Score.ToString().PadLeft(8, '0');
+        LevelCount.text = "Pipe: " + (Game.Instance.player.LevelNumber+1);
     }
 
     public void ShowGameOver()
