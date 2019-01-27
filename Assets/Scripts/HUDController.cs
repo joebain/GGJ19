@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUDController : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class HUDController : MonoBehaviour
 
     public void ShowGameOver()
     {
-        GameOverStuff.SetActive(true);
+        SceneManager.LoadScene("GameOver");
+        //GameOverStuff.SetActive(true);
     }
 }
