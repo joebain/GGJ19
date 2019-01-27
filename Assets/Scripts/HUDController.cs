@@ -8,6 +8,7 @@ public class HUDController : MonoBehaviour
     public Text Score;
     public Text LevelCount;
 
+
     private static HUDController instance;
 
     public static HUDController Instance { get { return instance; } }
