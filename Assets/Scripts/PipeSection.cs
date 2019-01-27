@@ -10,6 +10,8 @@ public class PipeSection : MonoBehaviour
         Big
     }
 
+    public int difficulty;
+
     public JointType StartJoint, EndJoint;
     public Tilemap[] tilemaps;
 
