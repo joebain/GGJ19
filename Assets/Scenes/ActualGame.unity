@@ -313,6 +313,7 @@ MonoBehaviour:
     Name: UNKNNOWN
     Score: 0
     LevelNumber: 0
+  IsHighscore: 0
 --- !u!4 &142764960
 Transform:
   m_ObjectHideFlags: 0
@@ -12638,8 +12639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -10}
-  m_SizeDelta: {x: 914.3, y: 584.2}
+  m_AnchoredPosition: {x: -39.4, y: -0.7}
+  m_SizeDelta: {x: 561.3, y: 358.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784864835
 MonoBehaviour:
@@ -12835,6 +12836,8 @@ MonoBehaviour:
   - {fileID: 1378220141}
   - {fileID: 956478176}
   SectionCount: 2
+  difficulty_cnt: 0
+  attempts: 0
   _doGenerateMap: 0
   PipeSectionsFolder: NewPipeSections
   StartSection: {fileID: 4207734167306017191, guid: a12af10f8c0288749b62a3dbeabb7594,
