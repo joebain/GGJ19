@@ -81,6 +81,11 @@ public class SmallUrchinMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.collider.CompareTag("Deadly"))
+        {
+            print("Collided with other enemy");
+            return;
+        }
         float current_point = body.GetRelativePoint(relative_point).y;
         if (collision.collider.CompareTag("Walls") && current_point > previous_point && current_point > start_point)
         {
