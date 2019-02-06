@@ -78,7 +78,7 @@ public class MapGenerator : MonoBehaviour
     {
         var rng = new System.Random(seed);
         attempts = 0;
-        int level_number = Game.Instance.player.LevelNumber;
+        int level_number = Game.Instance != null ? Game.Instance.player.LevelNumber : 0;
         
         int max_difficulty = difficulty * level_number;
 
