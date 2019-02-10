@@ -22,5 +22,5 @@ EditorBuildSettings:
     guid: 4713c5045724648e0b0bc48648836888
   - enabled: 1
     path: Assets/Scenes/PlayerNameEntry.unity
-    guid: 56e9cd79f86939143b0a1dac2f51fe0f
+    guid: 16fe1bed2f4c34e9f87b7196ed36e7cd
   m_configObjects: {}

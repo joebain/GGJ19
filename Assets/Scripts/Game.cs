@@ -34,7 +34,7 @@ public class Game : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        Screen.SetResolution(640, 360, true, 60);
+        //Screen.SetResolution(640, 360, true, 60);
 
     }
 
