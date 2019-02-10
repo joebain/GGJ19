@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6423269474530608114}
   - component: {fileID: 8448358820662097849}
   - component: {fileID: 5202624480194700861}
+  - component: {fileID: 2852510579862805126}
+  - component: {fileID: 4098858769982099108}
   m_Layer: 9
   m_Name: SmallUrchin
   m_TagString: Deadly
@@ -133,3 +135,35 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.37
+--- !u!114 &2852510579862805126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423269474530608072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e94680fcbf0eb4cb440782f1771102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FallForce: 1
+--- !u!95 &4098858769982099108
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423269474530608072}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 403867c965e922b498a5d0501bce9ce5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

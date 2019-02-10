@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EvilFishMovement : MonoBehaviour
+public class EvilFishMovement : EnemyMovement
 {
     private Rigidbody2D body;
     Vector2 UP;
     Vector2 DOWN;
     Vector2 LEFT;
     Vector2 RIGHT;
+    private Animator animator;
     public float SPEED;
     public float TOP_SPEED;
     Vector2 velocity;
@@ -34,6 +36,8 @@ public class EvilFishMovement : MonoBehaviour
         RIGHT = new Vector2(SPEED, 0.0f);
         /* TODO: change boost so it adds a force in the direction that Fish is headed. 
         This is a requirement if fish rotates */
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame

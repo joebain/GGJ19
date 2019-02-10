@@ -14925,6 +14925,12 @@ MonoBehaviour:
   MinSwimInterval: 1
   MaxSwimInterval: 5
   SwimForce: 80
+  OrbitSpeed: 1
+  OrbitDistance: 1
+  LerpTime: 0.5
+  ShootSpeed: 1
+  ShootTime: 1
+  FallSpeed: 3
 --- !u!50 &2144819872
 Rigidbody2D:
   serializedVersion: 4

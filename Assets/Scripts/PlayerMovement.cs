@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
     public ParticleSystem bubbleTrail;
 
+    List<Shrimp> prawns = new List<Shrimp>();
+
+    public int MaxPrawns = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,5 +78,40 @@ public class PlayerMovement : MonoBehaviour
             var emission = bubbleTrail.emission;
             emission.enabled = false;
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (prawns.Count > 0)
+            {
+                prawns[prawns.Count - 1].Shoot(transform.position+Vector3.right*0.1f, Vector3.right);
+                prawns.RemoveAt(prawns.Count - 1);
+            }
+        }
+    }
+
+    public bool CanCatchPrawn()
+    {
+        return prawns.Count < MaxPrawns;
+    }
+
+    public void CaughtPrawn(Shrimp prawn)
+    {
+        if (prawns.Contains(prawn)) return;
+        prawns.Add(prawn);
+    }
+
+    public int GetPrawnIndex(Shrimp prawn)
+    {
+        return prawns.IndexOf(prawn);
+    }
+
+    public void KillPrawn()
+    {
+        prawns[prawns.Count - 1].Die();
+        prawns.RemoveAt(prawns.Count - 1);
+    }
+
+    public bool HasPrawns()
+    {
+        return prawns.Count > 0;
     }
 }

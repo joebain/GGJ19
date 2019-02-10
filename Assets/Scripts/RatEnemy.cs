@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RatEnemy : MonoBehaviour
+public class RatEnemy : EnemyMovement
 {
 
     public float moveSpeed = 0.1f;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmallUrchinMovement : MonoBehaviour
+public class SmallUrchinMovement : EnemyMovement
 {
     private Rigidbody2D body;
     private bool collided_top;
