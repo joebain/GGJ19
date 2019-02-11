@@ -16,19 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2ded17f3fe72a7478410474a1f237b6b
-    m_lastTime: -8586530315914775808
+    m_lastTime: -8586516859315594941
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f8e4a63265585f4cbdeb6f3f2ec88f9f
-    m_lastTime: -8586530313814775808
+    m_lastTime: -8586516859352665858
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 188509f43f867441b6f5ee594e08acc2
-    m_lastTime: -8586530068324775808
+    m_lastTime: -8586516859316926222
     List:
     - name: Music
       guid: 013e7dc11fb69b41aa751bc4bbfda664
@@ -52,7 +52,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ddf1b14f080ea64fae642ca1020f6b70
-    m_lastTime: -8586530068324775808
+    m_lastTime: -8586516859363548416
     List:
     - name: FishDeath
       guid: 46d174884bd5e848887ae199bad76995
@@ -102,6 +102,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: MineExplode
+      guid: 39cf70b1a5dec742880f3ff8f239ad38
+      id: 3009491347
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MineExplode
+        ObjectType: 3
+      Path: Default Work Unit\MineExplode
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Pause_Music
       guid: 5a2a14d9b65d8e47973d40c630625c42
       id: 2735935537
@@ -114,6 +126,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Ambience
+      guid: 469969d85f155442a2e7eb3d89b3a2a6
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ambience
+        ObjectType: 3
+      Path: Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_LevelMusic
       guid: 14fbb5c1a82ae542a084a1665cbf3388
       id: 2671044069
@@ -123,18 +147,6 @@ MonoBehaviour:
       - ElementName: Play_LevelMusic
         ObjectType: 3
       Path: Default Work Unit\Play_LevelMusic
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_MenuMusic
-      guid: 189497e823026344bc2c1f32c1205b79
-      id: 2570041344
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_MenuMusic
-        ObjectType: 3
-      Path: Default Work Unit\Play_MenuMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -162,6 +174,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: ShrimpCanon
+      guid: eee48d8f5ed4fa4f832a707f217ddb7d
+      id: 3752496253
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ShrimpCanon
+        ObjectType: 3
+      Path: Default Work Unit\ShrimpCanon
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Start_Music
+      guid: 189497e823026344bc2c1f32c1205b79
+      id: 540993415
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Music
+        ObjectType: 3
+      Path: Default Work Unit\Start_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StartGame
       guid: d4cb7a7c43937b42b3ad7ee1c8c9b883
       id: 1521187885
@@ -171,6 +207,18 @@ MonoBehaviour:
       - ElementName: StartGame
         ObjectType: 3
       Path: Default Work Unit\StartGame
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: 6337fe64f7bf5d43bffd5c3a96d6c6f2
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Music
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -190,25 +238,47 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2f28318d343eec48b6cc2bcfa9a779b6
-    m_lastTime: -8586530315914775808
+    m_lastTime: -8586516859363344753
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3242012f63d2fc4c8c8c0f83cb8f774d
-    m_lastTime: -8586530315914775808
+    m_lastTime: -8586516859316377436
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 884de4f3a93be44394f37551565323e2
-    m_lastTime: -8586530315914775808
-    List: []
+    m_lastTime: -8586516859316065177
+    List:
+    - name: Music_Switch
+      guid: 94e3fe31ffdf224aaa10150af19734be
+      id: 2724869341
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Switch
+        ObjectType: 11
+      Path: Default Work Unit\Music_Switch
+      values:
+      - name: Level
+        guid: 9e2233417c2eeb40a21b60c9d60c0622
+        id: 2782712965
+        PathAndIcons:
+        - ElementName: Level
+          ObjectType: 10
+      - name: Menu
+        guid: 3b821355fbbdb54db8e746a1267ef1d8
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 10
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 26e195e1f39a764e83b29395c0cf90e3
-    m_lastTime: -8586530315914775808
+    m_lastTime: -8586516859315796534
     List: []
   ExpandedItems:
   - /FishFlush_Audio

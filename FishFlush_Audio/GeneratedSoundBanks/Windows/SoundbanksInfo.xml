@@ -20,42 +20,108 @@
 				<Event Id="2560187634" Name="FishSpeedBurst" ObjectPath="\Events\Default Work Unit\FishSpeedBurst"/>
 				<Event Id="303266102" Name="MenuHover" ObjectPath="\Events\Default Work Unit\MenuHover"/>
 				<Event Id="664555880" Name="MenuSelect" ObjectPath="\Events\Default Work Unit\MenuSelect"/>
+				<Event Id="3009491347" Name="MineExplode" ObjectPath="\Events\Default Work Unit\MineExplode"/>
 				<Event Id="523963140" Name="RatNoise" ObjectPath="\Events\Default Work Unit\RatNoise"/>
+				<Event Id="3752496253" Name="ShrimpCanon" ObjectPath="\Events\Default Work Unit\ShrimpCanon"/>
 				<Event Id="1521187885" Name="StartGame" ObjectPath="\Events\Default Work Unit\StartGame"/>
 				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1376056" Language="SFX">
+					<ShortName>SinkLoop.wav</ShortName>
+					<Path>SFX\SinkLoop_E8A94D20.wem</Path>
+				</File>
+				<File Id="13432309" Language="SFX">
+					<ShortName>Horror 6084_51_2.wav</ShortName>
+					<Path>SFX\Horror 6084_51_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="25860069" Language="SFX">
+					<ShortName>SquishMud 6068_01_1.wav</ShortName>
+					<Path>SFX\SquishMud 6068_01_1_DFAE2F06.wem</Path>
+				</File>
+				<File Id="52285201" Language="SFX">
+					<ShortName>Horror 6084_52_1.wav</ShortName>
+					<Path>SFX\Horror 6084_52_1_DFAE2F06.wem</Path>
+				</File>
+				<File Id="99792979" Language="SFX">
+					<ShortName>SquishMud 6068_01_2.wav</ShortName>
+					<Path>SFX\SquishMud 6068_01_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="108573032" Language="SFX">
+					<ShortName>SuctionLiquid 6100_25.wav</ShortName>
+					<Path>SFX\SuctionLiquid 6100_25_9440F9E6.wem</Path>
+				</File>
+				<File Id="150942800" Language="SFX">
+					<ShortName>ExplosionUnderwat 6075_98_2.wav</ShortName>
+					<Path>SFX\ExplosionUnderwat 6075_98_2_DFAE2F06.wem</Path>
+				</File>
 				<File Id="156529483" Language="SFX">
 					<ShortName>MenuHover.wav</ShortName>
 					<Path>SFX\MenuHover_DFAE2F06.wem</Path>
 				</File>
 				<File Id="188036111" Language="SFX">
 					<ShortName>Toilet 6109_38.wav</ShortName>
-					<Path>SFX\Toilet 6109_38_6F5F1756.wem</Path>
+					<Path>SFX\Toilet 6109_38_8E6A0A00.wem</Path>
+				</File>
+				<File Id="413141761" Language="SFX">
+					<ShortName>MineExplode.wav</ShortName>
+					<Path>SFX\MineExplode_7C832C27.wem</Path>
 				</File>
 				<File Id="432834030" Language="SFX">
 					<ShortName>BellTree 6027_01_1.wav</ShortName>
 					<Path>SFX\BellTree 6027_01_1_DFAE2F06.wem</Path>
 				</File>
-				<File Id="469883707" Language="SFX">
-					<ShortName>ComedySplat 6103_62_1.wav</ShortName>
-					<Path>SFX\ComedySplat 6103_62_1_DFAE2F06.wem</Path>
+				<File Id="469213025" Language="SFX">
+					<ShortName>SuctionLiquid 6100_25.wav</ShortName>
+					<Path>SFX\SuctionLiquid 6100_25_DFAE2F06.wem</Path>
+				</File>
+				<File Id="602053780" Language="SFX">
+					<ShortName>WaterSplash 6100_19_2.wav</ShortName>
+					<Path>SFX\WaterSplash 6100_19_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="645802903" Language="SFX">
+					<ShortName>Horror 6084_50_2.wav</ShortName>
+					<Path>SFX\Horror 6084_50_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="701159975" Language="SFX">
+					<ShortName>WaterBubble 6120_61_4.wav</ShortName>
+					<Path>SFX\WaterBubble 6120_61_4_DFAE2F06.wem</Path>
+				</File>
+				<File Id="707863916" Language="SFX">
+					<ShortName>MusicCymbal 6107_03_1.wav</ShortName>
+					<Path>SFX\MusicCymbal 6107_03_1_DFAE2F06.wem</Path>
 				</File>
 				<File Id="725162259" Language="SFX">
 					<ShortName>MenuSelect.wav</ShortName>
 					<Path>SFX\MenuSelect_DFAE2F06.wem</Path>
 				</File>
+				<File Id="798999601" Language="SFX">
+					<ShortName>WaterBubble 6120_61_2.wav</ShortName>
+					<Path>SFX\WaterBubble 6120_61_2_DFAE2F06.wem</Path>
+				</File>
 				<File Id="870333581" Language="SFX">
 					<ShortName>CartoonScratch 6045_45_2.wav</ShortName>
 					<Path>SFX\CartoonScratch 6045_45_2_DFAE2F06.wem</Path>
+				</File>
+				<File Id="900940650" Language="SFX">
+					<ShortName>WaterBubble 6120_61_5.wav</ShortName>
+					<Path>SFX\WaterBubble 6120_61_5_DFAE2F06.wem</Path>
 				</File>
 				<File Id="965202461" Language="SFX">
 					<ShortName>ComedyFishFlap 6103_58_4.wav</ShortName>
 					<Path>SFX\ComedyFishFlap 6103_58_4_DFAE2F06.wem</Path>
 				</File>
-				<File Id="1034865986" Language="SFX">
-					<ShortName>ComedySplat 6103_62_2.wav</ShortName>
-					<Path>SFX\ComedySplat 6103_62_2_DFAE2F06.wem</Path>
+				<File Id="971268214" Language="SFX">
+					<ShortName>WaterBubble 6120_61_1.wav</ShortName>
+					<Path>SFX\WaterBubble 6120_61_1_DFAE2F06.wem</Path>
+				</File>
+				<File Id="981595337" Language="SFX">
+					<ShortName>WaterBubble 6120_61_3.wav</ShortName>
+					<Path>SFX\WaterBubble 6120_61_3_DFAE2F06.wem</Path>
+				</File>
+				<File Id="1022248976" Language="SFX">
+					<ShortName>Horror 6084_50_1.wav</ShortName>
+					<Path>SFX\Horror 6084_50_1_DFAE2F06.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -71,73 +137,90 @@
 			<IncludedEvents>
 				<Event Id="2735935537" Name="Pause_Music" ObjectPath="\Events\Default Work Unit\Pause_Music"/>
 				<Event Id="2671044069" Name="Play_LevelMusic" ObjectPath="\Events\Default Work Unit\Play_LevelMusic"/>
-				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Default Work Unit\Play_MenuMusic"/>
 				<Event Id="2940177080" Name="Resume_Music" ObjectPath="\Events\Default Work Unit\Resume_Music"/>
+				<Event Id="540993415" Name="Start_Music" ObjectPath="\Events\Default Work Unit\Start_Music"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="48533713" Language="SFX">
-					<ShortName>Drums_01.wav</ShortName>
-					<Path>SFX\Drums_01_E8A94D20.wem</Path>
+				<File Id="42559363" Language="SFX">
+					<ShortName>Level_Bass_01.wav</ShortName>
+					<Path>SFX\Level_Bass_01_8956FC97.wem</Path>
 				</File>
-				<File Id="206690141" Language="SFX">
-					<ShortName>Gtr_Solo_02.wav</ShortName>
-					<Path>SFX\Gtr_Solo_02_E8A94D20.wem</Path>
+				<File Id="51997215" Language="SFX">
+					<ShortName>Level_Fill_Bass_02.wav</ShortName>
+					<Path>SFX\Level_Fill_Bass_02_8956FC97.wem</Path>
 				</File>
-				<File Id="256240475" Language="SFX">
-					<ShortName>Clav_01.wav</ShortName>
-					<Path>SFX\Clav_01_E8A94D20.wem</Path>
+				<File Id="66728886" Language="SFX">
+					<ShortName>Level_Bass_02.wav</ShortName>
+					<Path>SFX\Level_Bass_02_8956FC97.wem</Path>
 				</File>
-				<File Id="343274969" Language="SFX">
-					<ShortName>FunkFishMenu_Stems Keys.wav</ShortName>
-					<Path>SFX\FunkFishMenu_Stems Keys_E8A94D20.wem</Path>
+				<File Id="74947893" Language="SFX">
+					<ShortName>Level_Fill_Clav.wav</ShortName>
+					<Path>SFX\Level_Fill_Clav_8956FC97.wem</Path>
 				</File>
-				<File Id="362909530" Language="SFX">
-					<ShortName>GTR_01.wav</ShortName>
-					<Path>SFX\GTR_01_E8A94D20.wem</Path>
+				<File Id="151221217" Language="SFX">
+					<ShortName>Menu_Gtr02.wav</ShortName>
+					<Path>SFX\Menu_Gtr02_8956FC97.wem</Path>
 				</File>
-				<File Id="440909111" Language="SFX">
-					<ShortName>FunkFishMenu_Stems Horns.wav</ShortName>
-					<Path>SFX\FunkFishMenu_Stems Horns_E8A94D20.wem</Path>
+				<File Id="163658208" Language="SFX">
+					<ShortName>Menu_Drums.wav</ShortName>
+					<Path>SFX\Menu_Drums_8956FC97.wem</Path>
 				</File>
-				<File Id="495730434" Language="SFX">
-					<ShortName>FunkFishMenu_Stems Bass.wav</ShortName>
-					<Path>SFX\FunkFishMenu_Stems Bass_E8A94D20.wem</Path>
+				<File Id="183901353" Language="SFX">
+					<ShortName>Level_Clav_01.wav</ShortName>
+					<Path>SFX\Level_Clav_01_8956FC97.wem</Path>
 				</File>
-				<File Id="504021482" Language="SFX">
-					<ShortName>Clav_02.wav</ShortName>
-					<Path>SFX\Clav_02_E8A94D20.wem</Path>
+				<File Id="233277805" Language="SFX">
+					<ShortName>Level_GTR_02.wav</ShortName>
+					<Path>SFX\Level_GTR_02_8956FC97.wem</Path>
 				</File>
-				<File Id="697786283" Language="SFX">
-					<ShortName>Bass_01.wav</ShortName>
-					<Path>SFX\Bass_01_E8A94D20.wem</Path>
+				<File Id="293345885" Language="SFX">
+					<ShortName>Menu_Bass.wav</ShortName>
+					<Path>SFX\Menu_Bass_8956FC97.wem</Path>
 				</File>
-				<File Id="801321307" Language="SFX">
-					<ShortName>Gtr_Solo_01.wav</ShortName>
-					<Path>SFX\Gtr_Solo_01_E8A94D20.wem</Path>
+				<File Id="343907120" Language="SFX">
+					<ShortName>Menu_Horn.wav</ShortName>
+					<Path>SFX\Menu_Horn_8956FC97.wem</Path>
 				</File>
-				<File Id="808888493" Language="SFX">
-					<ShortName>FunkFishMenu_Stems Guitar.wav</ShortName>
-					<Path>SFX\FunkFishMenu_Stems Guitar_E8A94D20.wem</Path>
+				<File Id="347723212" Language="SFX">
+					<ShortName>Level_Solo_01.wav</ShortName>
+					<Path>SFX\Level_Solo_01_8956FC97.wem</Path>
 				</File>
-				<File Id="812987571" Language="SFX">
-					<ShortName>Bass_02.wav</ShortName>
-					<Path>SFX\Bass_02_E8A94D20.wem</Path>
+				<File Id="463297133" Language="SFX">
+					<ShortName>Level_Fill_GTR.wav</ShortName>
+					<Path>SFX\Level_Fill_GTR_8956FC97.wem</Path>
 				</File>
-				<File Id="823557663" Language="SFX">
-					<ShortName>Clav_03.wav</ShortName>
-					<Path>SFX\Clav_03_E8A94D20.wem</Path>
+				<File Id="511454151" Language="SFX">
+					<ShortName>Level_Solo_02.wav</ShortName>
+					<Path>SFX\Level_Solo_02_8956FC97.wem</Path>
 				</File>
-				<File Id="1030537737" Language="SFX">
-					<ShortName>FunkFishMenu_Stems Drums.wav</ShortName>
-					<Path>SFX\FunkFishMenu_Stems Drums_E8A94D20.wem</Path>
+				<File Id="655605668" Language="SFX">
+					<ShortName>Level_Fill_Bass_01.wav</ShortName>
+					<Path>SFX\Level_Fill_Bass_01_8956FC97.wem</Path>
 				</File>
-				<File Id="1043212719" Language="SFX">
-					<ShortName>GTR_03.wav</ShortName>
-					<Path>SFX\GTR_03_E8A94D20.wem</Path>
+				<File Id="822993192" Language="SFX">
+					<ShortName>Level_Clav_02.wav</ShortName>
+					<Path>SFX\Level_Clav_02_8956FC97.wem</Path>
 				</File>
-				<File Id="1053924720" Language="SFX">
-					<ShortName>GTR_02.wav</ShortName>
-					<Path>SFX\GTR_02_E8A94D20.wem</Path>
+				<File Id="835568960" Language="SFX">
+					<ShortName>Level_Fill_Drum.wav</ShortName>
+					<Path>SFX\Level_Fill_Drum_8956FC97.wem</Path>
+				</File>
+				<File Id="839879962" Language="SFX">
+					<ShortName>Menu_Wurly.wav</ShortName>
+					<Path>SFX\Menu_Wurly_8956FC97.wem</Path>
+				</File>
+				<File Id="952328361" Language="SFX">
+					<ShortName>Level_Drum_01.wav</ShortName>
+					<Path>SFX\Level_Drum_01_8956FC97.wem</Path>
+				</File>
+				<File Id="995200499" Language="SFX">
+					<ShortName>Menu_Guitar.wav</ShortName>
+					<Path>SFX\Menu_Guitar_8956FC97.wem</Path>
+				</File>
+				<File Id="1068578022" Language="SFX">
+					<ShortName>Level_GTR_01.wav</ShortName>
+					<Path>SFX\Level_GTR_01_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

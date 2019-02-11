@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 prawns[prawns.Count - 1].Shoot(transform.position+Vector3.right*0.1f, Vector3.right);
                 prawns.RemoveAt(prawns.Count - 1);
+                AkSoundEngine.PostEvent("ShrimpCanon", gameObject);
             }
         }
     }

@@ -49,12 +49,12 @@ public class Sounder : MonoBehaviour
 
     public void PlayMusic01()
     {
-        AkSoundEngine.PostEvent("Play_LevelMusic", gameObject);
+        AkSoundEngine.PostEvent("Start_Music", gameObject);
     }
 
     public void PlayMusic02()
     {
-        AkSoundEngine.PostEvent("Play_MenuMusic", gameObject);
+        AkSoundEngine.PostEvent("StartGame", gameObject);
     }
 
     public void PauseMusic()

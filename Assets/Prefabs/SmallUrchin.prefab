@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FallForce: 1
+  SoundEvent: MineExplode
 --- !u!95 &4098858769982099108
 Animator:
   serializedVersion: 3

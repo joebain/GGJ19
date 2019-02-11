@@ -21,15 +21,25 @@ public class MenuButton : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Spacebar Pressed in Start scence");
-            anims[0].SetBool("IsFlushing", true);
-            anims[1].SetBool("IsHandleMoving", true);
-            StartCoroutine(FlushingAnimationDelay());   
+            StartGame(); 
         }
 
     }
 
     public void StartGame()
     {
+        StartCoroutine(DoStartGame());
+    }
+
+    public IEnumerator DoStartGame()
+    {
+        anims[0].SetBool("IsFlushing", true);
+        anims[1].SetBool("IsHandleMoving", true);
+        AkSoundEngine.PostEvent("StartGame", gameObject);
+
+        ///coroutine to handle the animation of the fllush
+        yield return new WaitForSeconds(2);
+
         Debug.Log("Go to game");
         SceneManager.LoadScene("ActualGame");
     }
@@ -45,11 +55,5 @@ public class MenuButton : MonoBehaviour
     {
         Application.Quit();
     }
-
-    ///coroutine to handle the animation of the fllush
-    IEnumerator FlushingAnimationDelay()
-    {
-        yield return new WaitForSeconds(2);
-        StartGame();
-    }
+    
 }

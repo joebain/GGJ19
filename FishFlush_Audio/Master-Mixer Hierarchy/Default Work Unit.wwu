@@ -12,18 +12,22 @@
 					<ChildrenList>
 						<Bus Name="Music" ID="{7F6AE20D-FFAD-407F-8A83-1FDB76D4E709}"/>
 						<Bus Name="SFX" ID="{7FFEF647-1848-418E-B0DB-B8846032A123}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<DuckingList>
 								<DuckItem>
 									<BusRef Name="Music" ID="{7F6AE20D-FFAD-407F-8A83-1FDB76D4E709}"/>
 									<DuckingParam>
-										<Volume>-6</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
+										<Volume>-3</Volume>
+										<FadeInTime>0.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLog1</FadeCurve>
 									</DuckingParam>
 								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="Ambience" ID="{A9E797DD-CBEE-4136-A2B7-5929A012493A}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

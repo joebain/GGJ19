@@ -6,14 +6,35 @@ Event	ID	Name			Wwise Object Path	Notes
 	1637891311	FishDeath			\Default Work Unit\FishDeath	
 	2560187634	FishSpeedBurst			\Default Work Unit\FishSpeedBurst	
 	2716678721	Victory			\Default Work Unit\Victory	
+	3009491347	MineExplode			\Default Work Unit\MineExplode	
+	3752496253	ShrimpCanon			\Default Work Unit\ShrimpCanon	
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	939252268	New Modulator Time			\Default Work Unit\New Modulator Time	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	156529483	MenuHover	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\MenuHover_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuHover		5417
-	188036111	StartGame	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\Toilet 6109_38_6F5F1756.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\StartGame		84420
-	432834030	Victory	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\BellTree 6027_01_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Victory		46153
-	469883707	ComedySplat 6103_62_1	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedySplat 6103_62_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\ComedySplat 6103_62_1		5707
-	725162259	MenuSelect	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\MenuSelect_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuSelect		2514
-	870333581	Rat_Noise	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\CartoonScratch 6045_45_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Rat_Noise		9940
-	965202461	Fish_SpeedBurst	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedyFishFlap 6103_58_4_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_SpeedBurst		21384
-	1034865986	ComedySplat 6103_62_2	Y:\Documents\Current Projects\FishFlush\FishFlush_Audio\.cache\Windows\SFX\ComedySplat 6103_62_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\ComedySplat 6103_62_2		4725
+	1376056	SinkLoop	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\SinkLoop_E8A94D20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\SinkLoop		95229
+	13432309	Horror 6084_51_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Horror 6084_51_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Fish_Splat\Horror 6084_51_2		4654
+	25860069	SquishMud 6068_01_1	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\SquishMud 6068_01_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Squish\SquishMud 6068_01_1		10074
+	52285201	Horror 6084_52_1	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Horror 6084_52_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Fish_Splat\Horror 6084_52_1		6030
+	99792979	SquishMud 6068_01_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\SquishMud 6068_01_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Squish\SquishMud 6068_01_2		9182
+	108573032	SuctionLiquid 6100_25	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\SuctionLiquid 6100_25_9440F9E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SpeedBurst\SuctionLiquid 6100_25		12253
+	150942800	ExplosionUnderwat 6075_98_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\ExplosionUnderwat 6075_98_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ShrimpCanon\ExplosionUnderwat 6075_98_2		5473
+	156529483	MenuHover	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\MenuHover_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuHover		5417
+	188036111	StartGame	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Toilet 6109_38_8E6A0A00.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\StartGame		35402
+	413141761	MineExplode	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\MineExplode_7C832C27.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MineExplode		4814
+	432834030	VictoryChime	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\BellTree 6027_01_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Victory\VictoryChime		46153
+	469213025	SuctionLiquid 6100_25	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\SuctionLiquid 6100_25_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Victory\SuctionLiquid 6100_25		19663
+	602053780	WaterSplash 6100_19_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterSplash 6100_19_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ShrimpCanon\WaterSplash 6100_19_2		15628
+	645802903	Horror 6084_50_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Horror 6084_50_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Fish_Splat\Horror 6084_50_2		4405
+	701159975	WaterBubble 6120_61_4	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterBubble 6120_61_4_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\Bubbles\WaterBubble 6120_61_4		5987
+	707863916	MusicCymbal 6107_03_1	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\MusicCymbal 6107_03_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\MusicCymbal 6107_03_1		26779
+	725162259	MenuSelect	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\MenuSelect_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MenuSelect		2514
+	798999601	WaterBubble 6120_61_2	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterBubble 6120_61_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\Bubbles\WaterBubble 6120_61_2		1442
+	870333581	Rat_Noise	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\CartoonScratch 6045_45_2_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Rat_Noise		9940
+	900940650	WaterBubble 6120_61_5	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterBubble 6120_61_5_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\Bubbles\WaterBubble 6120_61_5		4778
+	965202461	Fish_Swim	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\ComedyFishFlap 6103_58_4_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SpeedBurst\Fish_Swim		21384
+	971268214	WaterBubble 6120_61_1	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterBubble 6120_61_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\Bubbles\WaterBubble 6120_61_1		1648
+	981595337	WaterBubble 6120_61_3	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\WaterBubble 6120_61_3_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SinkNBubbles\Bubbles\WaterBubble 6120_61_3		5438
+	1022248976	Horror 6084_50_1	C:\Users\joe\Code\GGJ19\FishFlush_Audio\.cache\Windows\SFX\Horror 6084_50_1_DFAE2F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fish_Death\Fish_Splat\Horror 6084_50_1		3668
 

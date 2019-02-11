@@ -1,18 +1,22 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class MusicTrigger : MonoBehaviour
 {
     public string EventName;
-    public float Delay = 0;
 
-    public static string MusicPlaying;
-    private static bool debugAlreadyStarted;
+    public bool OneShot = false;
+
+    public static bool Triggered = false;
+
+    public float Delay = 0;
 
     void Start()
     {
-        StartCoroutine(Play());
+        if (!OneShot || !Triggered)
+        {
+            StartCoroutine(Play());
+        }
     }
 
     private IEnumerator Play()
@@ -23,17 +27,8 @@ public class MusicTrigger : MonoBehaviour
 
     private void DoPlay()
     {
-        if (debugAlreadyStarted) return;
-        debugAlreadyStarted = true;
-        if (MusicPlaying != EventName)
-        {
-            Debug.Log("do play " + EventName + ", music playing: " + MusicPlaying);
-            AkSoundEngine.PostEvent(EventName, gameObject);
-            MusicPlaying = EventName;
-        }
-        else
-        {
-            Debug.Log("avoiding playing " + EventName + ", music playing: " + MusicPlaying);
-        }
+        Debug.Log("do play " + EventName);
+        AkSoundEngine.PostEvent(EventName, gameObject);
+        Triggered = true;
     }
 }

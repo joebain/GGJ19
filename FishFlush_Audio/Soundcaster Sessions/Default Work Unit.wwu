@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{35FACE0A-B5B7-419C-9AC4-52229D5DC929}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{35FACE0A-B5B7-419C-9AC4-52229D5DC929}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{35FACE0A-B5B7-419C-9AC4-52229D5DC929}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Music Soundcaster" ID="{5DEB7052-1466-41DC-9154-3C55FD4B2E70}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_Music" ID="{E8979418-0223-4463-BC2C-1F32C1205B79}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LevelMusic" ID="{C1B5FB14-2AA8-42E5-A084-A1665CBF3388}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Level" ID="{4133229E-2E7C-40EB-A21B-60C9D60C0622}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Game" ID="{9BD8E661-D566-4960-94B2-47AE974011E2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Resume_Music" ID="{18538B93-DF6F-433D-8630-C2E12A9F7492}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuSelect" ID="{49C2A556-F98C-4611-9986-9BD796A51376}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LevelMusic" ID="{C1B5FB14-2AA8-42E5-A084-A1665CBF3388}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartGame" ID="{7C7ACBD4-9343-427B-B3AD-7EE1C8C9B883}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FishDeath" ID="{8874D146-D54B-48E8-887A-E199BAD76995}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MineExplode" ID="{B170CF39-DEA5-42C7-880F-3FF8F239AD38}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Start_Music" ID="{E8979418-0223-4463-BC2C-1F32C1205B79}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Victory" ID="{FDFF33A3-B91C-435A-9636-7AFE9206D860}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FishSpeedBurst" ID="{43C8B268-11A3-4540-B140-E0FE24E64F53}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Music" ID="{D9142A5A-5DB6-478E-973D-40C630625C42}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RatNoise" ID="{C08E5C2E-D376-42AC-B8A2-E97CA8EF61D8}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuHover" ID="{9DA8552B-BE30-477B-B9F2-D7161B529A8D}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{D8699946-155F-4254-A2E7-EB3D89B3A2A6}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ShrimpCanon" ID="{8F8DE4EE-D45E-4FFA-832A-707F217DDB7D}" WorkUnitID="{4FB1F1DD-0E08-4FA6-AE64-2CA1020F6B70}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Menu" ID="{5513823B-BDFB-4DB5-B8E7-46A1267EF1D8}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

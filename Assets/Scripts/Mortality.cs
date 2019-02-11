@@ -11,6 +11,8 @@ public class Mortality : MonoBehaviour
 
     public float FallForce = 1f;
 
+    public string SoundEvent = "";
+
     void Awake() {
         colliders = GetComponents<Collider2D>();
         body = GetComponent<Rigidbody2D>();
@@ -35,6 +37,10 @@ public class Mortality : MonoBehaviour
         if (animator != null)
         {
             animator.SetTrigger("Dead");
+        }
+        if (SoundEvent != null && SoundEvent != "")
+        {
+            AkSoundEngine.PostEvent(SoundEvent, gameObject);
         }
     }
 
