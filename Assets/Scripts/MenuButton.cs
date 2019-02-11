@@ -5,22 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    private Animator anim;
+    private Animator[] anims; //There are multiple animators attached to the Handle and Flushing
 
     private void Start()
     {
-        anim = GetComponentInChildren<Animator>();
-        anim.SetBool("IsFlushing", false);
+        anims = GetComponentsInChildren<Animator>();
+        anims[0].SetBool("IsFlushing", false);
+        anims[1].SetBool("IsHandleMoving", false);
+
     }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Spacebar Pressed in Start scence");
-            anim.SetBool("IsFlushing", true);
-            StartCoroutine(FlushingAnimationDelay());
-
+            anims[0].SetBool("IsFlushing", true);
+            anims[1].SetBool("IsHandleMoving", true);
+            StartCoroutine(FlushingAnimationDelay());   
         }
 
     }
