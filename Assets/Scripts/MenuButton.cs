@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+        anim.SetBool("IsFlushing", false);
+    }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Spacebar Pressed in Start scence");
-            StartGame();
+            anim.SetBool("IsFlushing", true);
+            StartCoroutine(FlushingAnimationDelay());
 
         }
 
@@ -35,4 +43,10 @@ public class MenuButton : MonoBehaviour
         Application.Quit();
     }
 
+    ///coroutine to handle the animation of the fllush
+    IEnumerator FlushingAnimationDelay()
+    {
+        yield return new WaitForSeconds(2);
+        StartGame();
+    }
 }
