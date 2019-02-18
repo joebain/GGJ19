@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rewired;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D body;
-
+    private Rewired.Player player;
     public Vector2 BOOST;
     public float FORCE_APPLIED = 4f;
     public float TOP_SPEED = 1f;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool FORWARD_BOOST_FLAG;
     public float BOOST_DURATION = 0.3f;
     public float BOOST_COOLDOWN = 2f;
+    public float CONSTANT_SCROLL_FORCE = 2f;
     Vector2 velocity;
     Vector2 relative_point;
     float mag;
@@ -25,12 +27,27 @@ public class PlayerMovement : MonoBehaviour
 
     public int MaxPrawns = 3;
 
+    public Shrimp PrawnPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
         relative_point = new Vector2(0.0f, 0.0f);
 
         body = GetComponent<Rigidbody2D>();
+
+        player = ReInput.players.GetPlayer(RewiredConsts.Player.ONE);
+        
+        if (Game.Instance != null && Game.Instance.player != null) {
+            int shrimps = Game.Instance.player.ShrimpCount;
+            Debug.Log("starting with " + shrimps + " shrimps");
+            for (int s = 0; s < shrimps; s++)
+            {
+                var prawn = Instantiate(PrawnPrefab);
+                prawn.transform.position = transform.position;
+                prawn.Catch(this);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -44,28 +61,18 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = velocity.normalized * topSpeed;
         }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            body.AddForce(Vector2.up*FORCE_APPLIED);
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            body.AddForce(Vector2.left*FORCE_APPLIED);
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            body.AddForce(Vector2.down*FORCE_APPLIED);
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            body.AddForce(Vector2.right*FORCE_APPLIED);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time - boostTime > BOOST_COOLDOWN)
+
+        body.AddForce(Vector2.up*FORCE_APPLIED * player.GetAxis(RewiredConsts.Action.MOVEVERTICAL));
+        body.AddForce(Vector2.right*FORCE_APPLIED * player.GetAxis(RewiredConsts.Action.MOVEHORIZONTAL));
+        body.AddForce(Vector2.right * CONSTANT_SCROLL_FORCE);
+
+
+        if (player.GetButtonDown(RewiredConsts.Action.SWIM) && Time.time - boostTime > BOOST_COOLDOWN)
         {
             boostTime = Time.time;
             AkSoundEngine.PostEvent("FishSpeedBurst", gameObject);
         }
-        if (Input.GetKey(KeyCode.Space) && Time.time - boostTime < BOOST_DURATION)
+        if (player.GetButton(RewiredConsts.Action.SWIM) && Time.time - boostTime < BOOST_DURATION)
         {
             body.AddForce(Vector2.right * BOOST_FORCE);
             FORWARD_BOOST_FLAG = true;
@@ -78,12 +85,13 @@ public class PlayerMovement : MonoBehaviour
             var emission = bubbleTrail.emission;
             emission.enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (player.GetButtonDown(RewiredConsts.Action.FIRE))
         {
             if (prawns.Count > 0)
             {
                 prawns[prawns.Count - 1].Shoot(transform.position+Vector3.right*0.1f, Vector3.right);
                 prawns.RemoveAt(prawns.Count - 1);
+                Game.Instance.player.ShrimpCount = prawns.Count;
                 AkSoundEngine.PostEvent("ShrimpCanon", gameObject);
             }
         }
@@ -98,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (prawns.Contains(prawn)) return;
         prawns.Add(prawn);
+        Game.Instance.player.ShrimpCount = prawns.Count;
     }
 
     public int GetPrawnIndex(Shrimp prawn)
@@ -109,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
     {
         prawns[prawns.Count - 1].Die();
         prawns.RemoveAt(prawns.Count - 1);
+        Game.Instance.player.ShrimpCount = prawns.Count;
     }
 
     public bool HasPrawns()

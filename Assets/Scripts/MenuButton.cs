@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Rewired;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuButton : MonoBehaviour
 {
     private Animator[] anims; //There are multiple animators attached to the Handle and Flushing
+    private Rewired.Player player;
 
     private void Start()
     {
@@ -13,12 +15,14 @@ public class MenuButton : MonoBehaviour
         anims[0].SetBool("IsFlushing", false);
         anims[1].SetBool("IsHandleMoving", false);
 
+        player = ReInput.players.GetPlayer(RewiredConsts.Player.ONE);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (player.GetButtonDown(RewiredConsts.Action.SWIM))
         {
             Debug.Log("Spacebar Pressed in Start scence");
             StartGame(); 

@@ -95,17 +95,22 @@ public class Shrimp : MonoBehaviour
             var fish = collider.GetComponent<PlayerMovement>();
             if (fish != null && fish.CanCatchPrawn())
             {
-                this.fish = fish;
-                fish.CaughtPrawn(this);
-                state = States.Catching;
-                body.isKinematic = true;
-                caughtAt = Time.time;
-                caughtPos = transform.position;
-                foreach (Collider2D c in colliders)
-                {
-                    c.enabled = false;
-                }
+                Catch(fish);
             }
+        }
+    }
+
+    public void Catch(PlayerMovement fish)
+    {
+        this.fish = fish;
+        fish.CaughtPrawn(this);
+        state = States.Catching;
+        body.isKinematic = true;
+        caughtAt = Time.time;
+        caughtPos = transform.position;
+        foreach (Collider2D c in colliders)
+        {
+            c.enabled = false;
         }
     }
 
